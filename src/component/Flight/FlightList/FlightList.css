@@ -1458,7 +1458,7 @@
 }
 
 .flightListPage .blue {
-  background: #c93232 !important;
+  background: #053355 !important;
   color: #fff !important;
 }
 
@@ -1652,8 +1652,8 @@
 .flightListPage .rc-slider-track,
 .flightListPage .rc-slider-tracks,
 .flightListPage .rc-slider-handle {
-  background-color: #f44336 !important;
-  border: 1px solid #f44336 !important;
+  background-color: #053355 !important;
+  border: 1px solid #053355 !important;
 }
 
 @media (min-width: 768px) {
@@ -1709,7 +1709,7 @@
   overflow: hidden;
 }
 .deal .deal-wrap {
-  background: #fde5e575;
+  background: #05335529;
   width: max-content;
   padding: 6px 10px;
 }
@@ -2040,7 +2040,7 @@
   width: 10px;
   height: 10px;
   background: #f73030;
-  /* background: linear-gradient(20deg, rgb(247 48 48) 20%, rgb(29 72 159)); */
+  /* background: #053355; */
   border-radius: 50%;
   transform: scale(0);
   animation: animate 2s linear infinite;

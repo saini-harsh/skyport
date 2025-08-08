@@ -5,6 +5,7 @@
 .dealHeading {
   color: #313541;
   font-size: 1.5rem;
+  text-transform: uppercase;
   font-weight: 700;
 }
 .deal-tab {
@@ -62,7 +63,7 @@
 }
 .deal-box {
   margin: 0 0.5rem 1rem;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   position: relative;
 }
@@ -106,6 +107,8 @@
 }
 .travel-details .ond {
   font-size: 1rem;
+  font-weight: 700;
+  font-family: poppins;
 }
 .deal-box small {
   display: block;
@@ -160,4 +163,11 @@ sup {
 
 .alldealTab .dealSection table {
     width: 100%;
+}
+.travel-details .ttext,.travel-details .ond{
+  color: rgb(94, 94, 94);
+}
+.travel-details .deal-search{
+  color: #053355;
+  font-weight: 600;
 }

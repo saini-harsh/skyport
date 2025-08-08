@@ -54,8 +54,7 @@ const PromoCode = () => {
               <div
                 className="promoHeader"
                 style={{
-                  backgroundImage:
-                    "linear-gradient(20deg, rgb(247 48 48) 20%, rgb(29 72 159) 100%)",
+                 background:"#f2bc06"
                 }}
               >
                 <span className="fontSize18">

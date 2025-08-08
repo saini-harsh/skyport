@@ -87,6 +87,7 @@ import BusSeatLayout from "./component/Buses/BusModify/BusSeatLayout.jsx";
 import BusReviewPage from "./component/Buses/BusPreBook/BusReviewPage.jsx";
 import BusVoucher from "./component/Buses/BusPreBook/BusVoucher.jsx";
 import CabListing from "./component/Cabs/CabListing/CabListing.jsx";
+import NewFooter from "./component/Footer/NewFooter.jsx";
 
 
 
@@ -294,7 +295,8 @@ function App() {
 
       </Routes>
       <ToastContainer newestOnTop rtl={false} />
-      {shouldShowFooter && <Foot />}
+      {shouldShowFooter && <NewFooter />}
+      {/* {shouldShowFooter && <Foot />} */}
     </div>
   );
 }

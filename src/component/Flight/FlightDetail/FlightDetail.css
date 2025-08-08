@@ -4449,7 +4449,7 @@ label {
 }
 
 .con_tgg span {
-  background: linear-gradient(20deg, rgb(247 48 48) 20%, rgb(29 72 159));
+  background: #053355;
   border-radius: 40px;
   color: #ffffff;
   cursor: pointer;

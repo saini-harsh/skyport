@@ -1,0 +1,2 @@
+Primary: #053355
+Secondary: #f2bc06
