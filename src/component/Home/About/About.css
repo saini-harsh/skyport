@@ -1,0 +1,21 @@
+.bannerInner {
+  padding: 50px 0;
+  /* background: #d32f2f; */
+  background: #053355 ;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.section_padding {
+  padding: 40px 0;
+}
+/* @media (min-width: 1366px){
+.container {
+    max-width: 1200px;
+}} */
+.section_padding p {
+  font-size: 16px;
+}
+.img-fluid {
+  width: 100%;
+}

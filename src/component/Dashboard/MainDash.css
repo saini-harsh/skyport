@@ -1,0 +1,61 @@
+.bg-neutral-900 {
+    background-color: #091e43;
+}.listsss {
+   
+    display: flex
+;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}.link {
+    text-decoration: none;
+    transition: all .3s ease;
+}.clr-neutral-0 {
+    color: #FFF;
+}.d4 {
+    font-size: clamp(1.2rem, 1.263vw + 1rem, 3.5rem)
+;
+}
+.list-arrow>li+li {
+    -webkit-padding-start: 1rem;
+    padding-inline-start: 1rem;
+    -webkit-margin-start: 1rem;
+    margin-inline-start: 1rem;
+    position: relative;
+    isolation: isolate;
+}.list-arrow>li+li::before {
+    content: "\e5cc";
+    font-family: "Material Symbols Outlined";
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 0;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}.clr-tertiary-300 {
+    color: #ffbf47;
+}.material-symbols-outlined {
+    font-family: "Material Symbols Outlined";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-grid
+;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-space--smmm {
+    padding-top:60px;
+    padding-bottom: 140px;
+        background: linear-gradient(20deg, #f73030 20%, #1d489f);
+}

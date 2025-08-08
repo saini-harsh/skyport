@@ -1,0 +1,824 @@
+/* .bookimg_form_containerrr{
+    padding: 60px 0px;
+} */
+
+.flightWidgetSection {
+  /* min-height: 321px; */
+  /* width: 1200px; */
+  margin: 0 auto;
+  position: relative;
+}
+.flightWidgetSection p {
+  margin-bottom: 0px;
+}
+
+/* .appendBottom40 {
+    margin-bottom: 40px !important;
+} */
+.searchWidgetContainer {
+  padding: 0;
+  margin: 0;
+  color: #4a4a4a;
+  font-size: 14px;
+
+  font-weight: 400;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.fltWidgetSection {
+  /* width: 1200px; */
+  margin: 0 auto;
+  position: relative;
+  z-index: 100000000;
+  border-radius: 8px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08) !important;
+  /* box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important; */
+  background-color: #fff;
+  padding: 60px 20px 0;
+}
+.fltWidgetSection {
+  box-shadow: none;
+  padding: 30px 0px 0px 0px;
+  /* padding: 69px 20px 0px 20px; */
+}
+.makeFlex.hrtlCenter {
+  align-items: center;
+}
+.makeFlex {
+  display: flex;
+}
+.fswTabs {
+  width: 400px;
+  display: flex;
+}
+.latoRegular {
+  font-weight: 400;
+}
+.darkGreyText,
+._aff .darkGreyText {
+  color: #4a4a4a;
+}
+.fswTabs li {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 2px 6px;
+  border-radius: 20px;
+}
+.fswTabs li.selected {
+  background: #eaf5ff;
+  color: #000000;
+  font-weight: 900;
+}
+.fswTabs li .tabsCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: solid 1px #9b9b9b;
+}
+.fswTabs li.selected .tabsCircle {
+  border: #008cff;
+  background: #008cff;
+}
+.tabsCircle:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 6px;
+  border: solid #fff;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  margin-top: 1.5px;
+  margin-left: 3.5px;
+}
+.pushRight {
+  margin-left: auto;
+}
+.makeFlex .flexOne {
+  flex: 1;
+}
+.darkGreyText,
+._aff .darkGreyText {
+  color: #4a4a4a;
+}
+.fsw {
+  background: #fff;
+  padding: 0px 0px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.fsw .fsw_inner {
+  width: 100%;
+  margin: 0 auto 10px;
+  /* border-radius: 10px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: solid 1px #e7e7e7;
+  border-bottom: solid 1px #e7e7e7;
+  /* border: solid 1px #e7e7e7; */
+  position: relative;
+  justify-content: space-between;
+}
+.fsw .fsw_inner.returnPersuasion:nth-child(1) {
+  z-index: 5 !important;
+}
+.fsw .flt_fsw_inputBox {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox {
+  height: 112px;
+  border-radius: 0;
+  margin-right: 0;
+  transition: all 0.2s linear;
+}
+.flt_fsw_inputBox.searchCity {
+  width: 250px;
+  height: 112px;
+  border-right: solid 1px #e7e7e7;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox label {
+  padding: 10px 19px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.fsw .lbl_input {
+  text-transform: capitalize;
+}
+.appendBottom10 {
+  margin-bottom: 10px;
+}
+.latoBlack {
+  font-weight: 700;
+}
+.font30 {
+  font-size: 22px;
+  line-height: 30px;
+}
+.fsw .fsw_inputField {
+  border: 0;
+  outline: 0;
+  background: none;
+  min-width: 140px;
+  max-height: 36px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+}
+.flt_fsw_inputBox .lineHeight36 {
+  line-height: 36px;
+}
+
+.makeRelative {
+  position: relative;
+}
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.truncate {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.fltSwipCircle {
+  position: absolute;
+  right: -20px;
+  top: 34px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  /* margin-left: -22px; */
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  cursor: pointer;
+}
+.flightsSprite {
+  background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@21x.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 200px 650px;
+  font-size: 0px;
+  flex-shrink: 0;
+}
+.fltSwipIcon {
+  width: 15px;
+  height: 11px;
+  background-position: -149px -111px;
+}
+.webp .flightsSprite {
+  background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@21x.webp);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 200px 650px;
+  font-size: 0px;
+  flex-shrink: 0;
+}
+.fsw .flt_fsw_inputBox {
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox {
+  height: 112px;
+  border-radius: 0;
+  margin-right: 0;
+  transition: all 0.2s linear;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox.searchToCity {
+  width: 250px;
+  height: 112px;
+  border-right: solid 1px #e7e7e7;
+  padding-left: 20px;
+  margin-left: -18px;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox label {
+  padding: 10px 19px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.flt_fsw_inputBox .lineHeight36 {
+  line-height: 36px;
+}
+.flt_fsw_inputBox.dates {
+  width: 158px;
+  height: 112px;
+  border-right: solid 1px #e7e7e7;
+}
+.fltWidgetSection .fsw .flt_fsw_inputBox label {
+  padding: 10px 19px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.flt_fsw_inputBox.dates .lbl_input:after,
+.flt_fsw_inputBox.flightTravllers .lbl_input:after,
+.flt_fsw_inputBox.travelFor .lbl_input:after {
+  border: solid #008cff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  content: "";
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  vertical-align: top;
+  margin: 3px 0 0 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flt_fsw_inputBox.dates .lbl_input:after,
+.flt_fsw_inputBox.flightTravllers .lbl_input:after,
+.flt_fsw_inputBox.travelFor .lbl_input:after {
+  border: solid #008cff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  content: "";
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  vertical-align: top;
+  margin: 3px 0 0 8px;
+  transition: all 0.3s ease-in-out;
+}
+.flt_fsw_inputBox.dates input,
+.flt_fsw_inputBox.reDates input {
+  opacity: 0 !important;
+  position: absolute;
+  z-index: -1;
+}
+.flt_fsw_inputBox .lineHeight36 {
+  line-height: 36px;
+}
+.font20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+.blackText,
+._aff .blackText {
+  color: #000000;
+}
+.latoBlack {
+  font-weight: 700;
+}
+
+.font30 {
+  font-size: 22px;
+  line-height: 30px;
+}
+.flt_fsw_inputBox.reDates {
+  width: 175px;
+  height: 112px;
+  border-right: solid 1px #e7e7e7;
+}
+:root .greyText {
+  --borderColor: #9b9b9b;
+}
+.lineHeight16 {
+  line-height: 16px !important;
+}
+.latoBlack {
+  font-weight: 700;
+}
+.fsw .flt_fsw_inputBox.flightTravllers {
+  width: 214px;
+  border-radius: 0 10px 10px 0;
+}
+.fsw .flt_fsw_inputBox.flightTravllers label {
+  padding-right: 0;
+}
+.flt_fsw_inputBox.flightTravllers .lbl_input:after,
+.flt_fsw_inputBox.travelFor .lbl_input:after {
+  position: absolute;
+}
+.fsw .fsw_inputField {
+  border: 0;
+  outline: 0;
+  background: none;
+  min-width: 140px;
+  max-height: 36px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+}
+.flightTravllers input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.appendRight10 {
+  margin-right: 10px;
+}
+.introGBFlt {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+}
+.introGBFltTooltip {
+  display: none;
+  width: 180px;
+  background: #249995;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: calc(1 * 14px);
+  line-height: 18px;
+  color: #fff;
+  position: absolute;
+  top: 26px;
+}
+.makeFlex.centerContainer {
+  align-items: flex-start;
+}
+.specialFareContainer {
+  gap: 20px;
+}
+.specialFareContainer {
+  justify-content: space-between;
+}
+.appendBottom4 {
+  margin-bottom: 4px;
+}
+.titleTag .dtTag {
+  color: white;
+  font-weight: 900;
+  line-height: 16px;
+}
+.makeFlex.gap8 {
+  gap: 8px;
+}
+.fareCardItem {
+  position: relative;
+  padding: 8px 12px;
+  border-width: 1px;
+  border-style: solid;
+  gap: 10px;
+  display: flex;
+  border-radius: 6px;
+  cursor: pointer;
+  padding-bottom: 12px;
+  border: none !important;
+}
+.customRadioBtn {
+  position: relative;
+  display: inline-block;
+}
+.customRadioBtn input {
+  position: absolute;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  cursor: pointer;
+}
+.customRadioBtn .outer {
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9b9b9b;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 1px;
+  box-sizing: border-box;
+}
+.customRadioBtn input[type="radio"]:checked + .outer {
+  border-color: #2196f3;
+}
+.customRadioBtn .inner {
+  transition: all 0.25s ease-in-out;
+  height: 12px;
+  width: 12px;
+  transform: scale(0);
+  display: block;
+  margin: 1px;
+  border-radius: 50%;
+  background-color: #2196f3;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.customRadioBtn input[type="radio"]:checked + .outer .inner {
+  transform: scale(1);
+  opacity: 1;
+  background-color: d32f2f;
+}
+.lineHeight18 {
+  line-height: 18px !important;
+}
+.font12 {
+  font-size: 12px;
+  line-height: 12px;
+}
+.appendBottom3 {
+  margin-bottom: 3px;
+}
+.latoBold {
+  font-weight: 700;
+}
+.tooltip {
+  visibility: hidden;
+  border-radius: 6px;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  border: 1px solid #d8d8d8;
+  line-height: 18px;
+  font-size: 12px;
+  width: 285px;
+  transform: translateX(-50%);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-weight: 400;
+}
+.tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - 18px);
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #d8d8d8;
+}
+.tooltip:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - 17px);
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: white;
+}
+.primaryBtn {
+  border-radius: 34px;
+  background-image: var(
+    --color-btn-primary-bg,
+    linear-gradient(93deg, #53b2fe, #065af3)
+  );
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 20%);
+  display: inline-block;
+  flex-shrink: 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  text-align: center;
+}
+.latoBold {
+  font-weight: 700;
+}
+
+.font24 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.primaryBtn {
+  border-radius: 34px;
+  background: linear-gradient(93deg, #53b2fe, #065af3);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  flex-shrink: 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  text-align: center;
+}
+.fltWidgetSection .widgetSearchBtn {
+  width: 216px;
+  padding: 10px;
+  margin-bottom: -32px;
+  opacity: 1;
+}
+
+a.primaryBtn {
+  color: #fff;
+}
+
+a.primaryBtn {
+  color: #fff;
+}
+
+a.primaryBtn {
+  color: #fff;
+}
+
+.mat-stroked-button {
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center !important;
+  margin: auto !important;
+  margin: 0;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  overflow: visible;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
+    0 0 0 0 rgba(0, 0, 0, 0.12);
+  /* background: #d32f2f; */
+  background: #053355 ;
+  text-transform: capitalize;
+  color: #fff !important;
+  padding: 12px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-block: auto;
+  margin-right: 5px;
+}
+.select_special_offer_tg {
+  padding: 8px 12px;
+}
+
+.react-autosuggest__suggestion {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.makeFlex {
+  display: flex;
+}
+.appendRight8-bookings_form {
+  margin-right: 8px !important;
+  margin: auto;
+}
+.icLocAlt {
+  height: 20px;
+  width: 20px;
+}
+.makeFlex.column {
+  flex-direction: column;
+}
+
+.makeFlex .flexOne {
+  flex: 1;
+}
+.makeFlex.spaceBetween {
+  justify-content: space-between;
+}
+.appendRight10 {
+  margin-right: 10px;
+}
+.appendBottom5 {
+  margin-bottom: 5px;
+}
+.font14 {
+  font-size: 14px;
+  line-height: 14px;
+}
+.latoBold {
+  font-weight: 700;
+}
+
+.font14 {
+  font-size: 14px;
+  line-height: 14px;
+}
+.lightGreyText,
+._aff .lightGreyText {
+  color: #747474;
+}
+.font_search_bookingss {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px !important;
+  font-weight: 500;
+}
+.font12_bookingForm_ad {
+  font-size: 10px;
+  line-height: 10px;
+}
+.fareCardItem_class {
+  position: relative;
+  padding: 0px 6px;
+  border-width: 1px;
+  border-style: solid;
+  gap: 10px;
+  display: flex;
+  border-radius: 6px;
+  cursor: pointer;
+  padding-bottom: 12px;
+  border: none !important;
+}
+.backgroundBanner[data-v-b9cf504c] {
+  position: absolute !important;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner[data-v-0b3b4b19] {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  /* overflow: hidden; */
+  text-indent: -9999999px;
+}
+.banner .header-banner[data-v-0b3b4b19] {
+  width: 100%;
+}
+.banner .img-mark[data-v-0b3b4b19] {
+  position: absolute;
+  top: 173px;
+  width: calc(100% + 124px);
+  display: block;
+  transform: translateX(11%);
+  left: -11%;
+}
+.banner .description[data-v-0b3b4b19] {
+  text-indent: 0;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  font-size: 34px;
+  line-height: 48px;
+  color: #fff;
+  font-weight: 700;
+  left: 100px;
+  /* text-align: center; */
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+}
+.flightWidgetSection {
+  margin-top: -160px;
+}
+.search_flight_bookingsss {
+  border: none !important;
+}
+
+.bookimg_form_containerrr .sfp-change-trip {
+  margin-left: 16px;
+}
+
+@media (max-width: 1200px) {
+  .fsw .fsw_inner.returnPersuasion:nth-child(1) {
+    z-index: 5 !important;
+    flex-wrap: wrap;
+  }
+}
+
+.after_search_city {
+  padding: 9px 15px 12px 15px;
+  cursor: pointer;
+  display: list-item;
+  border-bottom: 1px solid #ececec;
+}
+.after_search_city:hover {
+  background: #f3f3f3;
+}
+.after_search_city .mflexcol {
+  display: flex;
+}
+.after_search_city .mgr10 {
+  margin-right: 10px;
+}
+.after_search_city .flsctrhead {
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+}
+.after_search_city .autosrpt {
+  color: #808080;
+  font-size: 11px;
+  margin-top: 1px;
+}
+.after_search_city .flcountry {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  font-size: 11px;
+  color: #7e7979;
+  text-align: right;
+}
+
+.FlightBookingDel {
+  /* border: 1px dashed #2d3290; */
+  width: 10.5%;
+  /* margin-right: 30px; */
+  /* margin-bottom: 20px; */
+  padding: 12px 12px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border: 1px solid #e1e1ff;
+}
+
+.flightBookingtext {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #2d3290;
+}
+
+.flightBookingMinText {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+.flightBookingSearch_recent {
+  display: flex;
+  gap: 5px;
+  /* justify-content: space-between; */
+}

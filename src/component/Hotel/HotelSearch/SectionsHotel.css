@@ -1,0 +1,48 @@
+.destination-section_HOTEl_TG .tab-button {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.destination-section_HOTEl_TG .tab-button:hover,
+.destination-section_HOTEl_TG .active-tab {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.destination-section_HOTEl_TG .tab-button img {
+  display: block;
+  margin: 0 auto;
+}
+    
+
+.destination-section_HOTEl_TG{
+    padding-top: 50px;
+}
+
+.section-header_hotelss {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  .tabs_section {
+ justify-content:start !important;
+ overflow-x: scroll;
+ gap: 5px !important;
+  }
+  .img_section_hotels{
+    display: none !important;
+  }
+  .hotel_section_img{
+    height: 180px;
+    width: 100%;
+  }
+}

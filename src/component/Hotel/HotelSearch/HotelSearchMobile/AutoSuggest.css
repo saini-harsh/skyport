@@ -1,0 +1,238 @@
+.hotelsearchmobile .rcnt-src-at {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.hotelsearchmobile .autosugst_newblock {
+    width: 100%;
+    background: #2d3290;
+    height: auto;
+    padding: 14px 0;
+    float: left;
+    position: relative;
+    z-index: 999999999999991;
+}
+
+.hotelsearchmobile #stickyheaderCal {
+    width: 100%;
+    height: 120px !important;
+    position: fixed !important;
+    top: 0;
+    z-index: 999999999999991;
+}
+
+.hotelsearchmobile .fli-c-blv2 {
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hotelsearchmobile .back_btn {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    width: 13px;
+    height: 13px;
+}
+
+.hotelsearchmobile .input_New_auto {
+    font-size: 17px;
+    padding: 15px 40px 15px 40px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* font-family: 'Poppins', sans-serif; */
+    border-radius: 4px;
+}
+
+.hotelsearchmobile .sugg_cross {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 13px;
+    height: 13px;
+}
+
+.hotelsearchmobile .auto_sugg {
+    /* display: none !important; */
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    scrollbar-width:thin;
+}
+
+.hotelsearchmobile .mgt100 {
+    margin-top: 10px;
+}
+ .autoSuggest_Error{
+    /* background-color: #f091cb; */
+    margin-top:'10px';
+    padding-left:'18px';
+ }
+
+.hotelsearchmobile .rcnt-src-at .auto_sugg {
+    background: #E8F2FA;
+    padding: 5px 15px;
+    display: block;
+    width: 100%;
+    float: left;
+    /* height: 83vh; */
+    overflow: auto;
+}
+
+.hotelsearchmobile .auto_sugg ul {
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    position: relative;
+}
+
+.hotelsearchmobile .auto_sugg ul li {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    margin: 2px auto;
+    border-radius: 5px;
+    /* display: flex; */
+    align-items: center;
+}
+
+.hotelsearchmobile .w_10 {
+    width: auto;
+    min-width: 15%;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    flex-direction: column;
+}
+
+.hotelsearchmobile .auto_sugg_img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.hotelsearchmobile .auto_sugg_add {
+    font-size: 11px;
+    margin-top: 2px;
+    color: #7D7D7D;
+    text-transform: capitalize;
+}
+
+.hotelsearchmobile .w_85 {
+    width: auto;
+    float: left;
+    min-width: 86%;
+    margin-left: auto;
+}
+
+.hotelsearchmobile .auto_sugg_tttl {
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+
+.hotelsearchmobile .back_btn img, .hotelsearchmobile .sugg_cross img{
+    height: 15px !important;
+}
+
+
+
+
+.hotelsearchmobile .pd20_main {
+    background: #E8F2FA;
+    padding: 5px 15px;
+    display: block;
+    width: 100%;
+    float: left;
+    height: 83vh;
+    height: calc(100vh - 70px) !important;
+    overflow: auto;
+}
+
+.hotelsearchmobile .spc-cty-at {
+    margin-top: 0 !important;
+}
+
+.hotelsearchmobile .newGpsLoc {
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #eaeaea;
+}
+
+/* .new_old .rcnt-bx2-at {
+    width: 92%;
+    margin: 0 auto;
+    color: #000;
+    border-bottom: 1PX SOLID #eaeaea;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+} */
+
+.hotelsearchmobile .m_sugg_bx {
+    background: #fff;
+    float: left;
+    box-shadow: 0 0 7px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hotelsearchmobile .flx-clm {
+    flex-direction: column;
+}
+
+.hotelsearchmobile .rec_txt {
+    font-size: 14px;
+    color: #7D7D7D;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hotelsearchmobile .pop_city_bx {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.hotelsearchmobile .pop_city_bx button {
+    color: #2d3290;
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 1px solid #2d3290;
+    border-radius: 5px;
+    margin: 0px 5px 8px 0px;
+    text-decoration: none;
+}
+
+.hotelsearchmobile .bdr_lg_sugg {
+    border-top: 1px solid #DCDCDC;
+    padding-top: 12px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}

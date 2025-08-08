@@ -1,0 +1,785 @@
+.detailDiv {
+  /* width: max-content; */
+  /* height: 200px; */
+  border-radius: 3px;
+  margin-bottom: 15px;
+  /* position: relative; */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(226, 226, 226);
+}
+.card_styling_flight_listt{
+  background-color: #FFF !important;
+  border-radius: 0px !important;
+  /* transition: all .3s ease-out; */
+  /* border: 1px solid #d3d3d3; */
+  /* border-color: rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%); */
+  transition: all .3s ease-out !important;
+  border: 1px solid #eaeaea !important;
+  /* box-shadow: 0 0 5px 0 rgb(0, 0, 0, .10) !important; */
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, .1) !important;
+}
+.FlightInfoDetailsMain {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  text-align: center;
+  /* align-items: center; */
+  padding-top: 0px;
+  /* margin-bottom: 20px; */
+  width: 100%;
+}
+
+.FlightInfoDetailsMain p{
+  margin-bottom: 0px;
+}
+
+.flightInfoDetailsPara {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.flightInforDetailsMain2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flightInfoImageMain {
+  height: 20px;
+  width: 25px;
+}
+
+.flightInfoImagetag {
+  height: 40px;
+  margin-right: 5px;
+  /* width: 40px; */
+  /* margin-left: 0px; */
+  /* margin-top: 20px */
+}
+
+.flightInfoDivtag1 {
+  /* margin-left: 30px; */
+  /* margin-top: 0px; */
+  /* padding-top: 0px; */
+}
+
+.flightInfoDivPara1 {
+  /* margin-top: 0px; */
+  /* padding-top: 0px; */
+}
+
+.flightInfoMainDiv2 {
+  /* margin-left: 70px; */
+}
+
+.flightInfoMainDiv2 p{
+  margin-bottom: 0;
+}
+
+.flightInfoPara2 {
+  /* line-height: 0.5cm; */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flightInfoPara3 {
+  line-height: 0.5cm;
+  color: rgb(136, 135, 135);
+}
+
+.flightInfoPara4 {
+  line-height: 0.5cm;
+}
+
+.flightInfoImage2 {
+  /* padding-left: 0px; */
+  /* margin-top: 5px; */
+}
+
+.flightInfoMainDiv5 {
+  /* margin-left: 100px; */
+}
+
+.flightInfoPara5 {
+  line-height: 0.5cm;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flightInfoPara6 {
+  line-height: 0.5cm;
+  color: rgb(136, 135, 135);
+}
+
+.flightInfoMainDiv6 {
+  width: 100%;
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+}
+
+.flightInfoInnerDiv6 {
+  border: 1px solid rgb(204, 204, 204);
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 5px;
+}
+.flightInfoInnerInnerDiv {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.flightInfoPara7 {
+  /* margin-left: 15px; */
+}
+
+.flightInfoMainInner1 {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.flightInfoPara8 {
+  font-weight: bold;
+  /* margin-left: 15px; */
+}
+
+.flightInfoPara9 {
+  margin-left: 19px;
+}
+
+.flightInfoMainDivInner4 {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.flightInfoPar10 {
+  font-weight: bold;
+  /* margin-left: 15px; */
+}
+
+.flightInfoMainDiv15 {
+  width: 65%;
+  padding: 5px;
+  /* margin-right: 15px; */
+  /* margin-left: 10px; */
+  padding-left: 40px;
+}
+
+.flightInforUnderLiner {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.flightInfoMainDiv8 {
+  /* width: 95%; */
+  /* margin-left: 2.5%; */
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+  padding-left: 10px !important;
+}
+
+.flightInfoUnderline2 {
+  font-size: 13px;
+  /* margin: 15px; */
+}
+
+.flightInfortabPanel1 {
+  width: 100%;
+}
+
+.flightInfoPanel2 {
+  width: 95%;
+  margin-left: 2.5%;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+}
+
+.flightInfoPanel3 {
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.flightInfoPanel4 {
+  width: 33%;
+  text-align: center;
+}
+
+.flightInfoPanel5 {
+  width: 96%;
+  margin-left: 2.5%;
+  display: flex;
+}
+
+.flightInfoPanel6 {
+  display: flex;
+  border-left: 1px solid rgb(204, 204, 204);
+  border-right: 1px solid rgb(204, 204, 204);
+  width: 33%;
+  text-align: center;
+}
+
+.flightInfoPara7 {
+  /* width: 30.2%; */
+  /* margin: auto; */
+  /* text-align: center; */
+}
+
+.flightInfoPanel8 {
+  border-left: 1px solid rgb(204, 204, 204);
+  border-right: 1px solid rgb(204, 204, 204);
+  width: 33.9%;
+  text-align: center;
+  margin: auto;
+}
+
+.flightInfoPanelImage {
+  /* margin-left: 105px; */
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.flightInfoPanel9 {
+  /* width: 95%; */
+  width: 100%;
+  /* margin-left: 2.5%; */
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+  font-size: 13px;
+}
+
+.flightInfoPanel0 {
+  margin: 10px;
+}
+
+.flightInfoPara12 {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+/* .flightInforUnderLiner,
+.flightInfoUnderline2 {
+  list-style: square;
+} */
+
+.flightInforUnderLiner,
+.flightInfoUnderline2 {
+  max-height: 150px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-left: 20px;
+  /* list-style-type: disc !important; */
+}
+
+@media (max-width: 768px) {
+  .flightInfoImagetag {
+    height: 30px;
+  }
+
+  .flightInfoDivPara1,
+  .flightInfoPara4,
+  .fli {
+    font-size: 13px;
+  }
+
+  .flightInfoPara2,
+  .flightInfoPara3,
+  .flightInfoPara12 {
+    font-size: 15px;
+  }
+
+  .flightInfoInnerDiv6 {
+    width: 100%;
+  }
+
+  .flightInfoMainDiv15 {
+    width: 100%;
+  }
+
+  .flightInfoPara8,
+  .flightInfoPara9,
+  .flightInfoPar10,
+  .flightInfoPara7 {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .flightInfoMainDiv8 {
+    border: none;
+  }
+
+  .flightInfoMainDiv15,
+  .flightInfoMainDiv8 {
+    margin-top: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .flightInfoMainDiv15 h3,
+  .flightInfoMainDiv8 h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 378px) {
+  .css-13xfq8m-MuiTabPanel-root {
+    padding: 0 !important;
+  }
+
+  .FlightInfoDetailsMain {
+    justify-content: center;
+  }
+
+  .flightInforDetailsMain2 {
+    flex-wrap: wrap !important;
+  }
+
+  .imgdiv {
+    margin-inline: 5px;
+    width: 100% !important;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px dotted grey;
+    margin-bottom: 5px;
+  }
+
+  .flightInfoMainDiv2 {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flightInfoMainDiv5 {
+    width: 20%;
+  }
+
+  .flightInfoPara2,
+  .flightInfoPara3,
+  .flightInfoPara4 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.flightInfoMainDiv6 p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+/* .flightInforUnderList{
+  display: flex;
+  gap: 5px;
+ 
+} */
+.flightInforUnderList .icons{
+  font-size: 16px !important;
+
+  /* width: 5%; */
+}
+.flightInforUnderList span{
+  /* width: 90%; */
+}
+.flightInforUnderList{
+  display: flex;
+  gap: 5px;
+}
+.extraSkeletonImage4{
+  width: 170px;
+}
+.extraSkeletionImage{
+  width: 100px;
+  height: 60px;
+}
+.extraSkeletionImage2{
+  width: 80px;
+  height: 60px;
+}
+.extraSkeleton5{
+  width: 380px;
+}
+@media(max-width:1100px){
+  .extraSkeletoon{
+    display: none;
+  }
+}
+@media(max-width:992px){
+  .extraSkeletion2{
+    display: none;
+  }
+}
+@media(max-width:605px){
+  .extraSkeletion3{
+    display: none;
+  }
+}
+
+@media(max-width:515px){
+  .extraSkeletion4{
+    display: none;
+  }
+}
+@media(max-width:445px){
+  .extraSkeleton4{
+    display: none;
+  }
+  .extraSkeletionImage{
+    width: 50px;
+    height: 20px !important;
+  }
+  .extraSkeletionImage2{
+    width: 50px;
+    height: 40px;
+  }
+  .extraSkeleton5{
+    width: 260px;
+  }
+  .extraSkeletonImage4{
+    width: 100px;
+  }
+}
+@media only screen and (min-width:740px) and (max-width:769px){
+  .extraSkeleton4{
+    display: none;
+  }
+}
+
+.flight_list_TG_phone{
+  display: none;
+}
+.card_styling_flight_listt{
+  display: block;
+}
+@media (max-width:768px) {
+  .flight_list_TG_phone{
+    display: block;
+  }
+  .card_styling_flight_listt{
+    display: none;
+  }
+}
+
+
+/* PHONE VIEW STYLING  */
+.fligt-cntnr {
+  width: 94%;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: 0 0 5px rgb(0 0 0 / 15%); */
+  /* border: 1px solid #dbdbdb; */
+}.discbxd {
+  font-size: 11px;
+  border: 1px solid #dddddd;
+  position: absolute;
+  padding: 0px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #02bb91;
+  background: #fff;
+  right: 11px;
+  top: -8px;
+}
+.adodis img {
+  width: 14px;
+  margin-right: 3px;
+  margin-bottom: 2px;
+}.ctr-dv {
+  width: 93%;
+  margin: 0 auto;
+}.fligt-cntnr .managlist1 {
+  padding: 16px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fl_logo {
+  /* width: 14.66667%;
+  float: left; */
+}.fl_info_col {
+  /* width: 61.33333%;
+  float: left; */
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.duratn-bdr {
+  border-bottom: 1px solid #d8d7d7;
+  position: relative;
+  padding-bottom: 7px;
+  font-size: 11px;
+}
+.append_bottom10 {
+  margin-bottom: 3px;
+}.sml-dot-l {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}.gray_dot--solid {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #d8d7d7;
+  border-radius: 50%;
+}.fl_deprt {
+  font-weight: 700;
+  /* float: left !important; */
+  font-size: 18px;
+  color: #333;
+}.text_gray {
+  color: #737373;
+  font-size: 12px;
+  vertical-align: sub;
+  display: inline-block;
+  height: 18px;
+}.fl_arive {
+  font-weight: 700;
+  /* float: right !important; */
+  font-size: 18px;
+  color: #333;
+}.sml-dot-r {
+  position: absolute;
+  bottom: -5px;
+  right: -2px;
+}.gray_dot--solid {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #d8d7d7;
+  border-radius: 50%;
+}.text_gray_n {
+  color: #324fad;
+  font-size: 10px;
+  font-weight: 500;
+}
+/* .fl_cost {
+  width: 24%;
+  float: left;
+} */
+.ti_prc {
+  float: right;
+  text-align: right;
+  width: 100%;
+}.ttl_b_amt {
+  font-size: 16px;
+  display: inline-block;
+  color: #f73030;
+  font-weight: 600;
+}.CurrncyCD_Rs:before, .CurrncyCD_RS:before {
+  content: "\20B9";
+  font-style: normal;
+}.ttl_b_amt {
+  font-size: 16px;
+  display: inline-block;
+  color: #f73030;
+  font-weight: 600;
+}.seatlft {
+  text-align: right;
+  color: #f73030;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 2px;
+}.mfrebtn {
+  color: #2196f3;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 11.5px;
+  /* float: right; */
+  font-weight: 600;
+  margin-top: 5px;
+}[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}.coupn-disc {
+  float: right;
+  font-size: 10px;
+  color: #55a529;
+  font-weight: 600;
+  text-align: right;
+  margin: 2px 0;
+}.corulmain {
+  margin: 0px auto;
+  padding: 10px 0 1px 0;
+  width: 100%;
+  border: 2px solid #f73030;
+  /* background-image: linear-gradient(to bottom, #8291F7, #63BBCC); */
+}.corboxuli {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 0 10px;
+  background: #fff;
+  padding: 0 10px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}.container-heduredi {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 0;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 72%;
+}.mobli {
+  width: 100%;
+  float: left;
+  margin: 0;
+}.heduredi {
+  width: 100%;
+  margin: 12px auto 5px;
+  float: left;
+}.nw-far-oth {
+  margin: 0 auto;
+  width: 100%;
+}.container-heduredi input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+    outline: 0;
+}.checkmark-heduredi {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+}.container-heduredi input:checked ~ .checkmark-heduredi {
+  background-color: #ffffff;
+  border: 1px solid #2196F3;
+}.corulmain ul {
+  margin: 2px 0;
+  padding: 0 8px 0 0px;
+  float: left;
+  width: 100%;
+}.corulmain ul li {
+  margin: 0 0 8px 0;
+  padding: 0 0 0 0;
+  list-style: none;
+  font-size: 12px;
+  background-position: 0 0;
+  font-weight: 500;
+  display: flex
+;
+  flex-flow: row wrap;
+}.tickicon {
+  background-image: url(https://www.easemytrip.com/m_content/img/tick1.svg);
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  height: 13px;
+  width: 13px;
+  float: left;
+  margin: 2px 5px 0 0;
+}.fremrtxt {
+  width: calc(100% - 18px);
+}.mbflex {
+  display: flex
+;
+  flex-flow: row wrap;
+}.iconColm {
+  width: 14px;
+  margin-right: 5px;
+  text-align: center;
+}.calwid {
+  width: calc(100% - 19px);
+}.ftn11_mf {
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}.sbdtl_mf {
+  font-size: 11px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}.main-btn {
+  float: right;
+  width: 26%;
+  text-align: right;
+  margin: 12px 0 0 0;
+}
+.price-tbe {
+    float: right;
+    width: 100%;
+    margin: 0 0 10px;
+    text-align: right;
+}.pricr-nerw {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}.CurrncyCD_Rs:before, .CurrncyCD_RS:before {
+  content: "\20B9";
+  font-style: normal;
+}.pricr-nerw {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}.btsub {
+  width: 100%;
+  float: left;
+}.book-bt-n {
+  
+  background-color: #1e49a0;
+  text-shadow: none;
+  color: #FFF;
+  outline: none;
+  width: 100%;
+  padding: 6px 5px;
+  font-size: 13px;
+  border: none;
+  border-radius: 40px;
+}.discbxdv2 {
+  font-size: 10px;
+  position: relative;
+  padding: 2px 4px;
+  font-weight: 600;
+  color: #02bb91;
+  background: #e8fff7;
+}
+.flight_light_inner_phone{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px;
+}
+.phone_flight_innerp{
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.phone_flight_innerp{
+  font-size: 12px;
+  font-weight: 400;
+}

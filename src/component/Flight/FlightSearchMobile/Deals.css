@@ -1,0 +1,51 @@
+.from_to_TG_to{
+    font-size: 13px;
+    font-weight: 400;
+}
+.deal_of_dayy_swiper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.deals_of_day_cont{
+    border-radius: 10px;
+    background:#fff;
+    padding: 10px;
+    box-shadow: rgba(247, 48, 48, 0.14) 0px 2px 8px 0px;
+}
+.deal_flat_off{
+        font-size: 12px;
+    line-height: 16px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 7px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #053355;
+    background: #0532551c;
+}
+.deal_of_dayy_Dest{
+    display: flex;
+    flex-direction: row;
+   font-size:14px;
+    align-items: center;
+    justify-content: space-between;
+}
+.deal_day_fW{
+    font-weight: 700;
+}
+.deals_of_day_cont p{
+    margin-bottom: 0px !important;
+}
+.Deals_TG_Container{
+    position: relative;
+}
+
+@media (max-width:767.9px) {
+    .Deals_TG_Container{
+    position: initial;
+}
+
+}
