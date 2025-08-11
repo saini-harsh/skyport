@@ -160,7 +160,7 @@ const FlightListCard = ({
                 {/* <Row style={{ margin: "0px", padding: "0px" }}>
                 <div className="offPriceDiv">
                 <p style={{ color: "black" }}>
-                  Use Promo code: EASEFLY to get $ 300
+                  Use Promo code: EASEFLY to get ₹300
                 instant discount on
                   this flight
                 </p>

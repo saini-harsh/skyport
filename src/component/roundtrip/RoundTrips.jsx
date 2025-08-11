@@ -61,13 +61,13 @@ const flightClassDefaultValue = (flightCabinClass) => {
 };
 
 const sliderItems = [
-  { date: "Oct 03", price: "$ 7845" },
-  { date: "Oct 04", price: "$ 5954" },
-  { date: "Oct 05", price: "$ 4155" },
-  { date: "Oct 06", price: "$ 5953" },
-  { date: "Oct 07", price: "$ 5495" },
-  { date: "Oct 08", price: "$ 5953" },
-  { date: "Oct 09", price: "$ 4155" },
+  { date: "Oct 03", price: "₹7845" },
+  { date: "Oct 04", price: "₹5954" },
+  { date: "Oct 05", price: "₹4155" },
+  { date: "Oct 06", price: "₹5953" },
+  { date: "Oct 07", price: "₹5495" },
+  { date: "Oct 08", price: "₹5953" },
+  { date: "Oct 09", price: "₹4155" },
 ];
 
 const CalenderSliderContent = styled.div`

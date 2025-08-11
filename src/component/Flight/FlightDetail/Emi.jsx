@@ -46,7 +46,7 @@ const Emi = ({ setEmiBtn, emiBtn }) => {
           Easy No Cost EMI Starts from &nbsp;{" "}
           <span className="ng-binding">
             {" "}
-            $ <span className="ng-binding">20987</span>{" "}
+            ₹<span className="ng-binding">20987</span>{" "}
             <span className="chsemi" onClick={() => setEmiBtn(!emiBtn)}>
               see option
             </span>

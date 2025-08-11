@@ -87,7 +87,7 @@ const WalletOffer = ({ handleChnageCurrency }) => {
                 }}
               >
                 Available Credit Limit:{" "}
-                <span className="float-right">$ 0.00</span>
+                <span className="float-right">₹0.00</span>
               </Card.Text>
             </Card.Footer>
           </Card>

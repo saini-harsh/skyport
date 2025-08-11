@@ -414,7 +414,7 @@ const SSRContent = ({
                                                               {seat.Code}
                                                             </li>
                                                             <li>
-                                                              Price: ${" "}
+                                                              Price: ₹
                                                               {handleChangeCurrency(
                                                                 seat.Price
                                                               )}
@@ -683,7 +683,7 @@ const SSRContent = ({
                                       <i className="fa fa-suitcase"></i>
                                     </div>
                                     <span className="serv_price bag_price">
-                                      $ {(option.Price)}
+                                      ₹{(option.Price)}
                                     </span>
                                     <span className="serv_type meals_type">
                                       Additional {option.Weight} kg
@@ -1001,7 +1001,7 @@ const SSRContent = ({
                                                                     {seat.code}
                                                                   </li>
                                                                   <li>
-                                                                    Price: ${" "}
+                                                                    Price: ₹
                                                                     {handleChangeCurrency(
                                                                       seat.amount
                                                                     )}
@@ -1183,7 +1183,7 @@ const SSRContent = ({
                                       <i className="fa fa-utensils"></i>
                                     </div>
                                     <span className="serv_price bag_price">
-                                      $ {handleChangeCurrency(meal.amount)}
+                                      ₹{handleChangeCurrency(meal.amount)}
                                     </span>
                                     <span className="serv_type meals_type">
                                       {meal.desc
@@ -1288,7 +1288,7 @@ const SSRContent = ({
                                         <i className="fa fa-suitcase"></i>
                                       </div>
                                       <span className="serv_price bag_price">
-                                        $ {handleChangeCurrency(meal.amount)}
+                                        ₹{handleChangeCurrency(meal.amount)}
                                       </span>
                                       <span className="serv_type meals_type">
                                         Additional {meal.desc}
@@ -1572,7 +1572,7 @@ const SSRContent = ({
                                                               {seat.Code}
                                                             </li>
                                                             <li>
-                                                              Price: ${" "}
+                                                              Price: ₹
                                                               {handleChangeCurrency(
                                                                 seat.Price
                                                               )}
@@ -1738,7 +1738,7 @@ const SSRContent = ({
                                     <i className="fa fa-utensils"></i>
                                   </div>
                                   <span className="serv_price bag_price">
-                                    $ {handleChangeCurrency(meal.Price)}
+                                    ₹{handleChangeCurrency(meal.Price)}
                                   </span>
                                   <span className="serv_type meals_type">
                                     {meal.AirlineDescription
@@ -1846,7 +1846,7 @@ const SSRContent = ({
                                       <i className="fa fa-suitcase"></i>
                                     </div>
                                     <span className="serv_price bag_price">
-                                      $ {handleChangeCurrency(option.Price)}
+                                      ₹{handleChangeCurrency(option.Price)}
                                     </span>
                                     <span className="serv_type meals_type">
                                       Additional {option.Weight} kg

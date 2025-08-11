@@ -758,28 +758,28 @@ const FlightBookingDetails = () => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.BF
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.TAF
                             )}
                           </td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.TF
@@ -1110,7 +1110,7 @@ const FlightBookingDetails = () => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1119,7 +1119,7 @@ const FlightBookingDetails = () => {
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1129,14 +1129,14 @@ const FlightBookingDetails = () => {
                               )
                             )}
                           </td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1438,51 +1438,51 @@ const FlightBookingDetails = () => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(bookingDetails.Fare.BaseFare)}
                           </td>
 
                           <td>
                             {" "}
-                            $ {handleChangeCurrency(bookingDetails.Fare.Tax)}
+                            ₹{handleChangeCurrency(bookingDetails.Fare.Tax)}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(bookingDetails.Fare.Discount)}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.ServiceFee
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalBaggageCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalMealCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalSeatCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.OtherCharges
                             )}
                           </td>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.PublishedFare
                             )}
@@ -2055,7 +2055,7 @@ const FlightBookingDetails = () => {
                                 Basefare{" "}
                                 <span>
                                   {" "}
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.itemInfos
                                       .AIR.totalPriceInfo.totalFareDetail.fC.BF
@@ -2066,7 +2066,7 @@ const FlightBookingDetails = () => {
                                 Tax{" "}
                                 <span>
                                   {" "}
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.itemInfos
                                       .AIR.totalPriceInfo.totalFareDetail.fC.TAF
@@ -2074,18 +2074,18 @@ const FlightBookingDetails = () => {
                                 </span>
                               </li>
                               <li>
-                                Meal Charges <span>$ 0</span>
+                                Meal Charges <span>₹0</span>
                               </li>
                               <li>
-                                Baggage Charges <span>$ 0</span>
+                                Baggage Charges <span>₹0</span>
                               </li>
                               <li>
-                                Seat Charges <span>$ 0</span>
+                                Seat Charges <span>₹0</span>
                               </li>
                               <li>
                                 Customer Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.itemInfos
                                       .AIR.totalPriceInfo.totalFareDetail.fC.TF
@@ -2095,7 +2095,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Agent Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.itemInfos
                                       .AIR.totalPriceInfo.totalFareDetail.fC.TF
@@ -2103,12 +2103,12 @@ const FlightBookingDetails = () => {
                                 </span>
                               </li>
                               <li>
-                                Agent Commission <span>$ 0</span>
+                                Agent Commission <span>₹0</span>
                               </li>
                               <li>
                                 Admin Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.itemInfos
                                       .AIR.totalPriceInfo.totalFareDetail.fC.TF
@@ -2808,7 +2808,7 @@ const FlightBookingDetails = () => {
                                 Basefare{" "}
                                 <span>
                                   {" "}
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     handleChangeCurrency2(
                                       filteredBooking.booking_response
@@ -2821,7 +2821,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Tax{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     handleChangeCurrency2(
                                       filteredBooking.booking_response
@@ -2835,18 +2835,18 @@ const FlightBookingDetails = () => {
                                 </span>
                               </li>
                               <li>
-                                Meal Charges <span>$ 0</span>
+                                Meal Charges <span>₹0</span>
                               </li>
                               <li>
-                                Baggage Charges <span>$ 0</span>
+                                Baggage Charges <span>₹0</span>
                               </li>
                               <li>
-                                Seat Charges <span>$ 0</span>
+                                Seat Charges <span>₹0</span>
                               </li>
                               <li>
                                 Customer Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     handleChangeCurrency2(
                                       filteredBooking.booking_response
@@ -2859,7 +2859,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Agent Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     handleChangeCurrency2(
                                       filteredBooking.booking_response
@@ -2870,12 +2870,12 @@ const FlightBookingDetails = () => {
                                 </span>
                               </li>
                               <li>
-                                Agent Commission <span>$ 0</span>
+                                Agent Commission <span>₹0</span>
                               </li>
                               <li>
                                 Admin Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     handleChangeCurrency2(
                                       filteredBooking.booking_response
@@ -3565,7 +3565,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Basefare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.BaseFare
@@ -3575,7 +3575,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Tax{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.Tax
@@ -3585,7 +3585,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Meal Charges{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.TotalMealCharges
@@ -3595,7 +3595,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Baggage Charges{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.TotalBaggageCharges
@@ -3605,7 +3605,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Seat Charges{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.TotalSeatCharges
@@ -3615,7 +3615,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Customer Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.PublishedFare
@@ -3625,7 +3625,7 @@ const FlightBookingDetails = () => {
                               <li>
                                 Agent Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.PublishedFare
@@ -3634,12 +3634,12 @@ const FlightBookingDetails = () => {
                               </li>
                               <li>
                                 Agent Commission{" "}
-                                <span>$ {handleChangeCurrency("0")}</span>
+                                <span>₹{handleChangeCurrency("0")}</span>
                               </li>
                               <li>
                                 Admin Fare{" "}
                                 <span>
-                                  ${" "}
+                                  ₹
                                   {handleChangeCurrency(
                                     filteredBooking.booking_response.Response
                                       .FlightItinerary.Fare.PublishedFare

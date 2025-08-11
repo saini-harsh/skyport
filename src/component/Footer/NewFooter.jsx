@@ -1,172 +1,160 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './NewFooter.css';
 
+// Get tomorrow's date in YYYY-MM-DD format
+const getTomorrowDate = () => {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+  return tomorrow.toISOString().split('T')[0];
+};
+
+const tomorrowDate = getTomorrowDate();
+
+// Static footer links
+const footerLinks = [
+  { title: "About Us", link: "/about-us" },
+  { title: "Privacy Policy", link: "" },
+  { title: "Terms & Conditions", link: "" },
+  { title: "Contact Us", link: "/contact" },
+  { title: "Offers", link: "/offers" },
+];
+
+// Domestic routes
+const domestic = [
+  { ori: "Delhi", desti: "Goa", link: `/flightList/dest_GOI*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Mumbai", desti: "Delhi", link: `/flightList/dest_DEL*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Kolkata", link: `/flightList/dest_CCU*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Pune", desti: "Delhi", link: `/flightList/dest_DEL*org_PNQ*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Bangalore", desti: "Delhi", link: `/flightList/dest_DEL*org_BLR*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Mumbai", desti: "Bangalore", link: `/flightList/dest_BLR*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Chennai", desti: "Delhi", link: `/flightList/dest_DEL*org_MAA*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Kolkata", desti: "Delhi", link: `/flightList/dest_DEL*org_CCU*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Mumbai", link: `/flightList/dest_BOM*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Bangalore", link: `/flightList/dest_BLR*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Mumbai", desti: "Goa", link: `/flightList/dest_GOI*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+];
+
+// International routes
+const international = [
+  { ori: "Delhi", desti: "Singapore", link: `/flightList/dest_SIN*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Bangkok", link: `/flightList/dest_BKK*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Mumbai", desti: "Dubai", link: `/flightList/dest_DXB*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Dubai", link: `/flightList/dest_DXB*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "London", link: `/flightList/dest_LHR*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Toronto", link: `/flightList/dest_YYZ*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "New York", link: `/flightList/dest_JFK*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Bangalore", desti: "Singapore", link: `/flightList/dest_SIN*org_BLR*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Paris", link: `/flightList/dest_CDG*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Mumbai", desti: "Paris", link: `/flightList/dest_CDG*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Delhi", desti: "Hong Kong", link: `/flightList/dest_HKG*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+];
+
+// Menu structure
 const menuData = [
   {
-    label: 'Quick Links',
-    type: 'section',
-    items: [
-      { label: 'Popular Airlines', type: 'submenu',
-        heading: 'Explore our cheap airfare options by carrier, with over 500 options to choose from.',
-        columns: [
-          ['Aeromexico', 'Air Canada', 'Air France', 'Alaska Airlines', 'American Airlines'],
-          ['China Eastern Airlines', 'Copa Airlines', 'Emirates', 'Etihad Airways', 'EVA Air'],
-          ['Frontier Airlines', 'Hawaiian Airlines', 'LATAM Airlines', 'Lufthansa', 'Air Europa', 'Spirit Airlines', 'Turkish Airlines', 'United Airlines', 'Volaris Airlines'],
-        ]
-      },
-      { label: 'Popular Flight Routes', type: 'submenu',
-        heading: 'Book one of our most popular flight routes with three easy clicks.',
-        columns: [
-          ['Atlanta to Ft Lauderdale', 'Chicago to Las Vegas', 'Ft Lauderdale to New York', 'Los Angeles to Las Vegas'],
-          ['New York to Ft Lauderdale', 'New York to London', 'New York to Los Angeles', 'New York to Miami'],
-          ['Philadelphia to Orlando', 'San Francisco to Los Angeles'],
-        ]
-      },
-      { label: 'Top U.S. Destinations', type: 'submenu',
-        heading: 'Top U.S. Destinations',
-        columns: [
-          ['New York City', 'Los Angeles', 'Las Vegas', 'Orlando', 'Miami'],
-          ['Chicago', 'San Francisco', 'Washington DC', 'Boston', 'Seattle'],
-        ]
-      },
-      { label: 'Top International Destinations', type: 'submenu',
-        heading: 'Top International Destinations',
-        columns: [
-          ['London', 'Paris', 'Rome', 'Bangkok', 'Dubai'],
-          ['Toronto', 'Cancun', 'Delhi', 'Tokyo', 'Sydney'],
-        ]
-      },
-      { label: 'Site Directories', type: 'submenu',
-        heading: 'Site Directories',
-        columns: [
-          ['Flights Directory', 'Hotels Directory', 'Cars Directory', 'Vacations Directory'],
-        ]
-      },
-      { label: 'Stay Connected', type: 'submenu',
-        heading: 'Stay Connected',
-        columns: [
-          ['Newsletter', 'Mobile App', 'Social Media'],
-        ]
-      },
-      { label: 'International Sites', type: 'submenu',
-        heading: 'International Sites',
-        columns: [
-          ['India', 'UK', 'Canada', 'Australia'],
-        ]
-      },
-    ]
-  },
-  {
-    label: 'Book',
-    type: 'links',
-    links: [
-      'Cheap Flights',
-      'Cheap Hotels',
-      'Car Rentals',
-      'Vacation Packages',
-      'Group Travel',
-      'Save & Earn $',
-    ]
-  },
-  {
-    label: 'Traveler Tools',
-    type: 'links',
-    links: [
-      'Gift Cards',
-      'Check My Booking',
-      'Customer Support',
-      'Online Check-in',
-      'Airline Baggage Fees',
-      'Check Flight Status',
-      'Travel Blog',
-      'Local Guides',
-    ]
-  },
-  {
     label: 'About',
-    type: 'links',
-    links: [
-      'About Us',
-      'Press Room',
-      'Careers',
-      'Affiliate Program',
-      'Client Testimonial',
-      'Advertise with Us',
-      'Newsletter',
-    ]
+    heading: 'About',
+    links: footerLinks.map(item => ({ text: item.title, href: item.link })),
   },
   {
-    label: 'Legal',
-    type: 'links',
-    links: [
-      'Privacy Policy',
-      'Cookie Policy',
-      'Price Match Promise',
-      'Terms & Conditions',
-      'Taxes & Fees',
-      'Our Service Fees',
-      'Post-Ticketing Fees',
-      'Compassion Exception Policy',
-      'Connection Protection',
-      'Consumer Health Data Notice',
-    ]
+    label: 'Popular Flights',
+    heading: 'Domestic Flights',
+    columns: [
+      domestic.slice(0, 6).map(item => ({
+        text: `${item.ori} to ${item.desti} Flights`,
+        href: item.link,
+      })),
+      domestic.slice(6).map(item => ({
+        text: `${item.ori} to ${item.desti} Flights`,
+        href: item.link,
+      })),
+    ],
+  },
+  {
+    label: 'International Flights',
+    heading: 'International Flights',
+    columns: [
+      international.slice(0, 6).map(item => ({
+        text: `${item.ori} to ${item.desti} Flights`,
+        href: item.link,
+      })),
+      international.slice(6).map(item => ({
+        text: `${item.ori} to ${item.desti} Flights`,
+        href: item.link,
+      })),
+    ],
   },
 ];
 
 const socialIcons = [
-  { icon: 'fab fa-facebook-f', label: 'Facebook' },
-  { icon: 'fab fa-x-twitter', label: 'Twitter' },
-  { icon: 'fab fa-instagram', label: 'Instagram' },
-  { icon: 'fab fa-tiktok', label: 'TikTok' },
+  { icon: 'fab fa-facebook-f', label: 'Facebook', link: '#' },
+  { icon: 'fab fa-x-twitter', label: 'Twitter', link: '#' },
+  { icon: 'fab fa-instagram', label: 'Instagram', link: '#' },
+  { icon: 'fab fa-tiktok', label: 'TikTok', link: '#' },
 ];
 
 const NewFooter = () => {
-  // State: [mainMenuIndex, submenuIndex] for Quick Links, otherwise just mainMenuIndex
-  const [selected, setSelected] = useState([0, 0]);
-  const mainMenu = menuData[selected[0]];
+  const [selected, setSelected] = useState(0);
+  const mainMenu = menuData[selected];
 
-  // Helper: Render right pane for Quick Links submenu
-  function renderQuickLinksRight(submenu) {
-    return (
-      <div className="footer-twopane-right">
-        <div className="footer-twopane-title">{submenu.heading}</div>
-        <div className={`footer-twopane-columns columns-${submenu.columns.length}`}>
-          {submenu.columns.map((col, colIdx) => (
-            <ul className="footer-twopane-list" key={colIdx}>
-              {col.map((item, idx) => (
-                <li key={idx}><a href="#">{item}</a></li>
-              ))}
-            </ul>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  // Helper: Render right pane for simple links
   function renderLinksRight(section) {
     return (
       <div className="footer-twopane-right">
-        <div className="footer-twopane-title">{section.label}</div>
-        <ul className="footer-twopane-list single-col">
-          {section.links.map((item, idx) => (
-            <li key={idx}><a href="#">{item}</a></li>
-          ))}
-        </ul>
+        {section.heading && (
+          <div className="footer-twopane-title">{section.heading}</div>
+        )}
+        {section.columns ? (
+          <div className={`footer-twopane-columns columns-${section.columns.length}`}>
+            {section.columns.map((col, colIdx) => (
+              <ul className="footer-twopane-list" key={colIdx}>
+                {col.map((item, idx) => (
+                  <li key={idx}>
+                    <Link to={item.href}>{item.text}</Link>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        ) : (
+          <ul className="footer-twopane-list single-col">
+            {section.links?.map((item, idx) => (
+              <li key={idx}>
+                <Link to={item.href}>{item.text}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     );
   }
 
   return (
     <footer className="footer-main twopane">
+        {/* Heading Row */}
+      <div className="footer-twopane-content" style={{minHeight:"0px"}}>
+        <div className="footer-heading-row">
+        <div className="footer-heading-left">Easy Access</div>
+        <div className="footer-heading-right">
+          Connect with Us
+          <div className="footer-social-inline">
+            {socialIcons.map((icon, idx) => (
+              <a key={idx} href={icon.link} aria-label={icon.label}>
+                <i className={icon.icon}></i>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+      </div>
       <div className="footer-twopane-content">
         <div className="footer-twopane-left">
-          {/* Main menu */}
           {menuData.map((menu, idx) => (
             <div
               key={menu.label}
-              className={`footer-twopane-menu-item${selected[0] === idx ? ' active' : ''}`}
-              onClick={() => setSelected([idx, 0])}
+              className={`footer-twopane-menu-item${selected === idx ? ' active' : ''}`}
+              onClick={() => setSelected(idx)}
               tabIndex={0}
               role="button"
               aria-label={menu.label}
@@ -174,43 +162,13 @@ const NewFooter = () => {
               {menu.label}
             </div>
           ))}
-          {/* If Quick Links, show submenus */}
-          {selected[0] === 0 && (
-            <div className="footer-twopane-submenu">
-              {mainMenu.items.map((submenu, subIdx) => (
-                <div
-                  key={submenu.label}
-                  className={`footer-twopane-submenu-item${selected[1] === subIdx ? ' active' : ''}`}
-                  onClick={e => { e.stopPropagation(); setSelected([0, subIdx]); }}
-                  tabIndex={0}
-                  role="button"
-                  aria-label={submenu.label}
-                >
-                  {submenu.label}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
-        {/* Right pane */}
-        {selected[0] === 0
-          ? renderQuickLinksRight(mainMenu.items[selected[1]])
-          : renderLinksRight(mainMenu)
-        }
+        {renderLinksRight(mainMenu)}
       </div>
-      {/* <div className="footer-bottom">
-        <div className="footer-social">
-          <span>Connect with Us</span>
-          <div className="footer-social-icons">
-            {socialIcons.map((icon, idx) => (
-              <a href="#" aria-label={icon.label} key={icon.label}><i className={icon.icon}></i></a>
-            ))}
-          </div>
-        </div>
-        <div className="footer-payments">
-          <img src="https://www.cheapoair.com/img/footer/payment-logos.png" alt="Payments" />
-        </div>
-      </div> */}
+      <div className="footer-twopane-content fpaystrip" style={{minHeight:"0px"}}>
+      <img src="https://c.fareportal.com/vd/coa/travel/r6/images/footer-logo-desktop.webp" width="1135" height="51" alt="partners logos" className="footer-logo-desktop"/>
+      </div>
+
       <div className="footer-copyright">
         © 2024 SkyPort Destinations | All rights reserved
       </div>

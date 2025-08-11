@@ -622,10 +622,10 @@ a.primaryBtn {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
     0 0 0 0 rgba(0, 0, 0, 0.12);
   /* background: #d32f2f; */
-  background: #053355 ;
+  background: #f2bc06 ;
   text-transform: capitalize;
-  color: #fff !important;
-  padding: 12px 10px;
+  color: #000 !important;
+  padding: 12px 30px;
   font-size: 18px;
   font-weight: 700;
   margin-block: auto;
@@ -736,7 +736,7 @@ a.primaryBtn {
   top: 50px;
   font-size: 34px;
   line-height: 48px;
-  color: #fff;
+  color: #f2bc06;
   font-weight: 700;
   left: 100px;
   /* text-align: center; */

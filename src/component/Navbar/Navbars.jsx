@@ -422,7 +422,7 @@ const Navbars = () => {
             <Nav className="me-auto py-4 py-lg-0">
  
 
-              <NavDropdown
+              {/* <NavDropdown
                 title={
                   <span style={{ display: 'flex', alignItems: 'center',flexDirection:"row", color: '#ffffff', fontWeight: 600 }}>
                     More travel
@@ -436,7 +436,7 @@ const Navbars = () => {
                   <FaPlane className="dropdown-icon" />
                   Flight
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               {/* <Nav.Link
                 as={Link}
                 to="/"

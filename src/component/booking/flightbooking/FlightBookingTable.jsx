@@ -818,28 +818,28 @@ const FlightBookingTable = ({ heading, data }) => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.BF
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.TAF
                             )}
                           </td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
-                          <td> $ 0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
+                          <td> ₹0</td>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetailsTJ.itemInfos.AIR.totalPriceInfo
                                 .totalFareDetail.fC.TF
@@ -1170,7 +1170,7 @@ const FlightBookingTable = ({ heading, data }) => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1179,7 +1179,7 @@ const FlightBookingTable = ({ heading, data }) => {
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1189,14 +1189,14 @@ const FlightBookingTable = ({ heading, data }) => {
                               )
                             )}
                           </td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
-                          <td>$ 0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
+                          <td>₹0</td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               handleChangeCurrency2(
                                 bookingDetailsParto.TravelItinerary
@@ -1498,51 +1498,51 @@ const FlightBookingTable = ({ heading, data }) => {
                         <tr>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(bookingDetails.Fare.BaseFare)}
                           </td>
 
                           <td>
                             {" "}
-                            $ {handleChangeCurrency(bookingDetails.Fare.Tax)}
+                            ₹{handleChangeCurrency(bookingDetails.Fare.Tax)}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(bookingDetails.Fare.Discount)}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.ServiceFee
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalBaggageCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalMealCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.TotalSeatCharges
                             )}
                           </td>
                           <td>
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.OtherCharges
                             )}
                           </td>
                           <td>
                             {" "}
-                            ${" "}
+                            ₹
                             {handleChangeCurrency(
                               bookingDetails.Fare.PublishedFare
                             )}
@@ -1787,7 +1787,7 @@ const FlightBookingTable = ({ heading, data }) => {
                                         fontWeight: 600,
                                       }}
                                     >
-                                      $ {booking.booking_response.order.amount}
+                                      ₹{booking.booking_response.order.amount}
                                     </td>
                                     <td>
                                       {/* Invoice */}
@@ -1917,7 +1917,7 @@ const FlightBookingTable = ({ heading, data }) => {
                                         fontWeight: 600,
                                       }}
                                     >
-                                      ${" "}
+                                      ₹
                                       {handleChangeCurrency(
                                         handleChangeCurrency2(
                                           booking.booking_response
@@ -2049,7 +2049,7 @@ const FlightBookingTable = ({ heading, data }) => {
                                         fontWeight: 600,
                                       }}
                                     >
-                                      ${" "}
+                                      ₹
                                       {booking.booking_response.Response
                                         .FlightItinerary &&
                                         booking.booking_response.Response

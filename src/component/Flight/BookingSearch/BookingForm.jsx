@@ -770,12 +770,12 @@ const BookingForm = () => {
   };
   const slides = [
     {
-      // backgroundImage:
-      // "https://www.shutterstock.com/image-vector/digital-3d-airplane-abstract-vector-600nw-1950131554.jpg",
-      overlayColor: "",
+      backgroundImage:
+      "",
+      overlayColor: "#053355",
       imgMark: "/Images/dream-feather-bg.png",
-      title: "Search flights",
-      subtitle: "",
+      title: "Your Gateway to the World",
+      subtitle: "Anytime. Anywhere",
     }
     // {
     //   backgroundImage:
@@ -850,17 +850,17 @@ const BookingForm = () => {
           }}
           modules={[Autoplay, Pagination]}
           className="mySwiper"
-          style={{ height: "300px" }}
+          style={{ height: "340px" }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div
                 className="backgroundBanner banner banner-image"
                 style={{
-                  // backgroundImage: `url(${slide.backgroundImage})`,
-                  // backgroundPosition: "center",
-                  // backgroundSize: "cover",
-                  backgroundColor:"#053355"
+                  backgroundImage: `url(${slide.backgroundImage})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundColor:"#053355",
                 }}
                 data-v-0b3b4b19=""
                 data-v-b9cf504c=""
@@ -868,8 +868,9 @@ const BookingForm = () => {
                 <div
                   className=""
                   style={{
+                    height:"100%",
                     backgroundColor: slide.overlayColor,
-                    opacity: slide.overlayOpacity || "0.5",
+                    opacity: slide.overlayOpacity || "0.8",
                   }}
                 ></div>
 
@@ -883,7 +884,7 @@ const BookingForm = () => {
                 )}
                 <h1 className="description" data-v-0b3b4b19="">
                   <div>{slide.title}</div>
-                  {/* <div>{slide.subtitle}</div> */}
+                  <div>{slide.subtitle}</div>
                 </h1>
               </div>
             </SwiperSlide>
@@ -1569,7 +1570,7 @@ const BookingForm = () => {
                   </div>
                   <div className="flt_fsw_inputBox dates reDates inactiveWidget search_flight_bookingsss ">
                     <button className="mat-stroked-button" type="submit">
-                      Search Flight{" "}
+                      Search{" "}
                     </button>
                   </div>
                 </div>

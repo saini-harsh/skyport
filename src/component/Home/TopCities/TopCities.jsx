@@ -360,7 +360,7 @@ const TopCities = () => {
           <div className="_hdrtxt">
             {/* <img src={Right} alt="" style={{ width: "42px", height: "42px" }} /> */}
             <div className="top_cities_flight_serach">
-              Top Flight Routes
+              Inter-Caribbean destinations
             </div>
             {/* <img src={Left} alt="" style={{ width: "42px", height: "42px" }} /> */}
           </div>

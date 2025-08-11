@@ -41,7 +41,7 @@ function ContactUs() {
                 <div className="contact-item-content">
                   <p className="contact-us">CALL US 24*7</p>
                   <h6>
-                    <a href="tel:+919211252356">+91-92112XXXXX</a>
+                    <a href="tel:+919211252356">+592 615 8808</a>
                   </h6>
                 </div>
               </div>
@@ -68,7 +68,7 @@ function ContactUs() {
                   <p className="contact-us">MAKE A QUOTE</p>
                   <h6>
                     <a href="mailto:support@tripgoonline.com">
-                       explore@skyportdestinations.com
+                       support@skyportdestinations.com
                     </a>
                   </h6>
                 </div>
@@ -95,7 +95,7 @@ function ContactUs() {
                 <div className="contact-item-content">
                   <p className="contact-us">WORK STATION</p>
                   <h6>
-                    Delhi
+                    Guyana
                   </h6>
                 </div>
               </div>
