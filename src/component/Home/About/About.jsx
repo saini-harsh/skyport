@@ -19,8 +19,19 @@ const About = () => {
             <h2>
               <b>About SkyPort Destinations</b>
             </h2>
-            <p>
-           Every journey begins with more than a boarding pass.
+          </div>
+        </Container>
+      </section>
+      <section className="section_padding">
+        <Container>
+        <Row className="d-flex align-items-center">
+            <Col md={6}>
+              <div>
+                {/* <h2>
+                  <b>Our Mission</b>
+                </h2> */}
+                <p>
+                Every journey begins with more than a boarding pass.
             It starts with a spark — a desire to explore, to reconnect, to feel alive somewhere new.
             Whether you&#39;re chasing opportunities, escaping to turquoise coastlines, reuniting, or simply
             answering the quiet call of adventure — SkyPort Destinations is your passport to the world.
@@ -30,47 +41,12 @@ const About = () => {
             single, trusted destination. Every aspect of the experience — from search to checkout — has
             been designed to align with international best practices in travel technology and customer
             satisfaction.
-            Launched by Guyanese with a vision of connecting the world from our vibrant corner of the
-            Caribbean, SkyPort Destinations is driven by a vision to become the leading name in digital air
-            travel across the Caribbean and beyond. By prioritizing transparency, innovation, and
-            operational excellence, the company aims to reshape how travelers book flights — making it
-            smarter, simpler, and more secure.
-            SkyPort Destinations represents a new standard in flight booking — built for scale, powered by
-            trust, and committed to delivering travel solutions that match the speed and ambition of the
-            modern world.
-            At SkyPort Destinations, we don’t just book flights — we open the skies to your next story..
-            </p>
-          </div>
-        </Container>
-      </section>
-      <section className="section_padding">
-        <Container>
-          <Row>
-            <Col md={6}>
-              <div>
-                <h2>
-                  <b>Our Mission</b>
-                </h2>
-                <p>
-                  At SkyPort DestinationsTour & Travels, our mission is to
-                  simplify and elevate the travel experience for our B2C
-                  partners. We strive to be the preferred travel portal by
-                  delivering cutting-edge technology, unparalleled service, and
-                  strategic partnerships that drive business success.
-                </p>
-                <p>
-                  Empowering Business Success: We are dedicated to empowering
-                  the success of our B2C partners by providing them with a
-                  dynamic platform that seamlessly integrates cutting-edge
-                  technology, strategic partnerships, and industry insights. Our
-                  mission is to be the driving force behind the growth and
-                  profitability of businesses in the travel sector.
                 </p>
               </div>
             </Col>
             <Col md={6}>
               <img
-                src="https://img.freepik.com/premium-photo/editorial-man-control-airviation_7180-40.jpg?w=900"
+                src="https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg"
                 className="img-fluid"
                 alt="Expand Sales"
               />
@@ -80,39 +56,29 @@ const About = () => {
       </section>
       <section className="section_padding">
         <Container>
-          <Row>
+          <Row className="d-flex align-items-center">
             <Col md={6}>
               <img
-                src="https://img.freepik.com/free-photo/couple-interacting-with-each-other-check-counter_107420-85045.jpg?t=st=1736426055~exp=1736429655~hmac=4d747669ea9116e5570ef2f2a8281d3d90a4b67a6bef10d0bacc5c77ced75684&w=900"
+                src="https://img.freepik.com/free-vector/business-team-communicating-via-social-media_74855-5439.jpg"
                 className="img-fluid"
                 alt="Expand Sales"
               />
             </Col>
             <Col md={6}>
               <div>
-                <h2>
+                {/* <h2>
                   <b>What Sets Us Apart</b>
-                </h2>
+                </h2> */}
                 <p>
-                  SkyPort DestinationsTour & Travels is exclusively designed for
-                  businesses in the travel industry. Whether you are a travel
-                  agency, tour operator, or corporate entity, our platform is
-                  crafted to meet your specific requirements, offering a
-                  comprehensive suite of tools and services.
-                </p>
-                <p>
-                  We leverage the latest technology to bring efficiency,
-                  transparency, and innovation to your fingertips. Our
-                  user-friendly portal is equipped with advanced features to
-                  streamline booking processes, manage reservations, and access
-                  real-time data, ensuring you stay ahead in a dynamic market.
-                </p>
-                <p>
-                  Your success is our priority. SkyPort DestinationsTour &
-                  Travels is more than a platform; it's a partnership. Our
-                  dedicated support team is committed to providing personalized
-                  assistance, ensuring that your business experiences seamless
-                  operations and growth.
+                Launched by Guyanese with a vision of connecting the world from our vibrant corner of the
+            Caribbean, SkyPort Destinations is driven by a vision to become the leading name in digital air
+            travel across the Caribbean and beyond. By prioritizing transparency, innovation, and
+            operational excellence, the company aims to reshape how travelers book flights — making it
+            smarter, simpler, and more secure.
+            SkyPort Destinations represents a new standard in flight booking — built for scale, powered by
+            trust, and committed to delivering travel solutions that match the speed and ambition of the
+            modern world.
+            At SkyPort Destinations, we don’t just book flights — we open the skies to your next story.
                 </p>
               </div>
             </Col>

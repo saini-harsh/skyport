@@ -186,7 +186,70 @@ const PrivacyPolicy = () => {
             <h2>8.  Data Retention and Archiving</h2>
             <p>
               SkyPort retains personal data only for the duration necessary to achieve the purposes for which it was collected, or as required by applicable laws and industry standards.<br />
-
+              <table className="table-auto border-collapse border border-gray-300 w-full text-sm">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="border border-gray-300 px-4 py-2 text-left">
+                      Data Type
+                    </th>
+                    <th className="border border-gray-300 px-4 py-2 text-left">
+                      Retention Period
+                    </th>
+                    <th className="border border-gray-300 px-4 py-2 text-left">
+                      Rationale
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">Booking Records</td>
+                    <td className="border border-gray-300 px-4 py-2">7 years</td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Legal, financial, and audit obligations
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Payment Information
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">7 years</td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Anti-fraud, dispute resolution
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Customer Communications
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">3 years</td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Service history, issue resolution
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Marketing Preferences
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Until withdrawn or 5 years
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Regulatory compliance
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Technical Logs
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      12–24 months
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Security and analytics purposes
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
               <br />After expiration, data is securely erased or irreversibly anonymized.
 
 
@@ -273,9 +336,9 @@ const PrivacyPolicy = () => {
           <div className="terms_item">
             <h2>17. Contact and Complaints</h2>
             <p>
-              <strong>Data Protection Officer</strong><br/>
-              SkyPort Destinations<br/>
-              Georgetown, Guyana<br/>
+              <strong>Data Protection Officer</strong><br />
+              SkyPort Destinations<br />
+              Georgetown, Guyana<br />
               Email: <a href="mailto:explore@skyportdestinations.com">explore@skyportdestinations.com</a>
             </p>
           </div>

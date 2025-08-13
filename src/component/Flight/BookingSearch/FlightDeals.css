@@ -30,11 +30,6 @@
   margin-right: 22px;
   background-color: #f5f5f5;
 }
-.tab-item.active {
-  border: 1px solid #006ee3 !important;
-  background: #e6f1fc;
-  color: #1255ae !important;
-}
 .alldealTab .dealcontainer1.tab-content {
   margin-bottom: 1rem;
 }
@@ -170,4 +165,33 @@ sup {
 .travel-details .deal-search{
   color: #053355;
   font-weight: 600;
+}
+/* Primary Button (e.g., Search) */
+.deal-tab .tab-item.active {
+  background-color: #FDBE10;
+  color: #002B49;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.deal-tab .tab-item.active:hover {
+  background-color: #e6ac0e;
+}
+
+/* Inactive Tabs */
+.deal-tab .tab-item {
+  background-color: #ffffff;
+  color: #002B49;
+  border: 1px solid #FDBE10;
+  margin-right: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deal-tab .tab-item:hover {
+  background-color: #f5f5f5;
+  color: #002B49;
 }
