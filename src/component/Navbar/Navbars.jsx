@@ -144,9 +144,8 @@ const Navbars = () => {
     setShow(true);
   };
 
-
   const location = useLocation();
-  const isHome = location.pathname === '/';
+  const isHome = location.pathname === "/";
 
   return (
     <div className="main-nav">
@@ -161,7 +160,7 @@ const Navbars = () => {
         // className="p-0"
         collapseOnSelect
         expanded={expanded}
-        className={`p-0 ${isHome ? 'navbar-home_sky' : 'navbar-other_sky'}`}
+        className={`p-0 ${isHome ? "navbar-home_sky" : "navbar-other_sky"}`}
         style={{ border: "none", backgroundColor: "#053355" }}
       >
         <Container>
@@ -174,7 +173,7 @@ const Navbars = () => {
             style={{ width: "75%", display: showSideNav ? "block" : "none" }}
           >
             <div className="">
-              <a
+              <Link
                 className="closemenu_v3"
                 onClick={(e) => {
                   e.preventDefault();
@@ -182,7 +181,7 @@ const Navbars = () => {
                 }}
               >
                 ×
-              </a>
+              </Link>
 
               <div
                 id="divSignInPnl"
@@ -252,7 +251,7 @@ const Navbars = () => {
               </div>
               <div className="_sidMenu">
                 <div className="_sidMenu_tggg" onClick={handleMyAccount}>
-                  <a>
+                  <Link>
                     <div className="_bxIcn">
                       <div className="_menuIcn">
                         <IoTicketOutline color="#1d489f" size={25} />
@@ -269,11 +268,11 @@ const Navbars = () => {
                     <i
                       className={`_arwwLft ${showHelpDropdown ? "rotate" : ""}`}
                     />
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="_sidMenu_tggg">
-                  <a>
+                  <Link>
                     <div className="_bxIcn">
                       <div className="_menuIcn">
                         <RiWallet3Line color="#1d489f" size={25} />
@@ -290,7 +289,7 @@ const Navbars = () => {
                     <i
                       className={`_arwwLft ${showHelpDropdown ? "rotate" : ""}`}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -354,7 +353,7 @@ const Navbars = () => {
               </div>
 
               <div className="_sidMenu">
-                <a>
+                <Link>
                   <div className="_bxIcn" onClick={toggleHelpDropdown}>
                     <div className="_menuIcn" style={{ marginTop: "7px" }}>
                       <i
@@ -375,10 +374,10 @@ const Navbars = () => {
                   <i
                     className={`_arwwLft ${showHelpDropdown ? "rotate" : ""}`}
                   />
-                </a>
+                </Link>
               </div>
               <div className="_sidMenu">
-                <a onClick={handleAuthClick}>
+                <Link onClick={handleAuthClick}>
                   <div className="_bxIcn" onClick={toggleHelpDropdown}>
                     <div className="_menuIcn" style={{ marginTop: "7px" }}>
                       <BsBoxArrowInRight size={25} color="#aa0000" />
@@ -392,11 +391,11 @@ const Navbars = () => {
                   <i
                     className={`_arwwLft ${showHelpDropdown ? "rotate" : ""}`}
                   />
-                </a>
+                </Link>
               </div>
 
               <div className="_sidMenu tLogout" style={{ display: "none" }}>
-                <a>
+                <Link>
                   <div className="_bxIcn">
                     <div className="_menuIcn">
                       <i className="_logOut" />
@@ -409,7 +408,7 @@ const Navbars = () => {
                     </div>
                   </div>
                   <i className="_arwwLft" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -453,80 +452,62 @@ const Navbars = () => {
                 <div className="option-list ">
                   <ul className="first-menu">
                     <li>
-                      <a
-                        tabIndex={0}
-                        title="Flights"
-                        className="item-link "
-                        href="//www.onetravel.com/cheap-flights"
-                      >
+                      <Link className="item-link " to="/flight">
                         <div className="left-sec">
-                          <svg
+                          <img
+                            src="https://cdn-icons-png.freepik.com/512/15804/15804019.png"
+                            alt=""
+                            style={{ height: "32px", width: "32px" }}
+                          />
+                          {/* <svg
                             viewBox="0 0 20 20"
                             className="sv svg-1-25 text-gray-700  "
                             aria-hidden="true"
                           >
                             <use className="sv-icon" xlinkHref="#flights_v2" />
-                          </svg>
+                          </svg> */}
                           Flights
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        tabIndex={0}
-                        title="Hotels"
-                        className="item-link "
-                        href="//www.onetravel.com/hotels"
-                      >
+                      <Link className="item-link " to="/hotel">
                         <div className="left-sec">
-                          <svg
+                          <img
+                            src="https://cdn-icons-png.freepik.com/512/1475/1475996.png"
+                            alt=""
+                            style={{ height: "32px", width: "32px" }}
+                          />
+                          {/* <svg
                             viewBox="0 0 20 20"
                             className="sv svg-1-25 text-gray-700  "
                             aria-hidden="true"
                           >
                             <use className="sv-icon" xlinkHref="#hotels_v2" />
-                          </svg>
+                          </svg> */}
                           Hotels
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        tabIndex={0}
-                        title="Cars"
-                        className="item-link "
-                        href="//www.onetravel.com/car-rentals"
-                      >
+                      <Link className="item-link " to="/tour">
                         <div className="left-sec">
-                          <svg
+                          <img
+                            src="https://cdn-icons-png.freepik.com/512/712/712067.png?ga=GA1.1.1727314930.1755079763"
+                            // src="https://cdn-icons-png.freepik.com/512/6381/6381883.png"
+                            alt=""
+                            style={{ height: "32px", width: "35px" }}
+                          />
+                          {/* <svg
                             viewBox="0 0 20 20"
                             className="sv svg-1-25 text-gray-700  "
                             aria-hidden="true"
                           >
                             <use className="sv-icon" xlinkHref="#car_v2" />
-                          </svg>
-                          Cars
+                          </svg> */}
+                          Tour Packages
                         </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        tabIndex={0}
-                        title="Packages"
-                        className="item-link "
-                        href="//www.onetravel.com/vacations"
-                      >
-                        <div className="left-sec">
-                          <svg
-                            viewBox="0 0 20 20"
-                            className="sv svg-1-25 text-gray-700  "
-                            aria-hidden="true"
-                          >
-                            <use className="sv-icon" xlinkHref="#package_v2" />
-                          </svg>
-                          Packages
-                        </div>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -815,7 +796,7 @@ const Navbars = () => {
             </div> */}
 
             <div className="header-right-sec">
-              <a
+              <Link
                 href="tel:+592 615 8808"
                 role="button"
                 className="utility__phone utility__phone-number is-active inner"
@@ -830,9 +811,7 @@ const Navbars = () => {
                 </div>
                 <span className="utility__phone-msg" id="utility__phone-msg">
                   <b id="utility__phone-number">+592 615 8808</b>
-                  <span className="d-block travel__expert">
-                    Book Now - Call us 24/7
-                  </span>
+                  <span className="d-block travel__expert">Call us -</span>
                 </span>
                 <div className="tooltip-feature">
                   <div className="benefits-title">
@@ -867,7 +846,7 @@ const Navbars = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
               {/* <div className="nav-item currency-menu d-none d-md-block">
                 <button
                   className=" navigation-link-new currency-btn css-1ujsas3"
@@ -890,9 +869,9 @@ const Navbars = () => {
                 </button>
               </div> */}
               <div className="nav-item helpMenu">
-                <a className="navigation-link-new" type="link">
-                  Help
-                </a>
+                <Link className="navigation-link-new" type="link" to="/contact">
+                  Support
+                </Link>
               </div>
               <button className="btn-signin css-79xub" type="button">
                 <span className="icon_grey">
@@ -905,10 +884,10 @@ const Navbars = () => {
                   </svg>
                 </span>
                 <span className="icon_blue">
-                  <IoPersonCircleOutline size={23} />
+                  <IoPersonCircleOutline size={23} color="#000" />
                 </span>
-                <span className="text">
-                  Sign In <span className="seprator-slash">/</span> Join
+                <span className="text" style={{ color: "#000" }}>
+                  Sign In <span className="seprator-slash">/</span> Sign Out
                 </span>
                 <span className=" css-w0pj6f" />
               </button>

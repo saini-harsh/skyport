@@ -50,14 +50,15 @@ const Hero = () => {
       {/* <International /> */}
       {/* <HolidayPackages /> */}
       {/* <WhyUs /> */}
-      <WhyUss />
+   
      {/* <MobileApp 
         backgroundImage="/Images/mobile_app_trip_old.jpeg"
         title="Download Our Mobile App"
         description="Book the flight ticket and hotel with the huge discount. Refer friends and get generous bonuses from theirs orders."
       /> */}
 
-      <AboutHome />
+      {/* <AboutHome /> */}
+         <WhyUss />
       <EnquiryPopup/>
     </div>
   );

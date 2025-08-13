@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import './Home.css'
+import './WhyUss.css'
 const WhyUss = () => {
   return (
     <div style={{ padding: "40px 0px" }}>
@@ -52,6 +52,56 @@ const WhyUss = () => {
         </>
       </Container>
     </div>
+//     <div className="whychoose_con">
+//   <div className="container">
+//     <h3>Why Smart Travelers Trust Skyport Destinations?</h3>
+//     <p>
+//       We focus only on flights — and that’s why we do it better than anyone
+//       else.
+//     </p>
+//     <div className="whyus_container">
+//       <div className="whychoose_20">
+//         <div className="choose_left">
+//           <img src="https://www.flightsmojo.in/images/paper-plane.svg" alt="pci" />
+//         </div>
+//         <div className="choose_right border_right">
+//           <h4>Flights. That’s All.</h4>
+//           <p>No hotels. No distractions. Just the best airfares.</p>
+//         </div>
+//       </div>
+//       <div className="whychoose_20">
+//         <div className="choose_left">
+//           <img src="https://www.flightsmojo.in/images/target.svg" alt="easyicon" />
+//         </div>
+//         <div className="choose_right border_right">
+//           <h4>Experts in Complex Routes</h4>
+//           <p>Multi-leg, visa-sensitive, and rare itineraries? We’ve got it.</p>
+//         </div>
+//       </div>
+//       <div className="whychoose_20">
+//         <div className="choose_left">
+//           <img src="https://www.flightsmojo.in/images/receipts.svg" alt="rupee icon" />
+//         </div>
+//         <div className="choose_right border_right">
+//           <h4>Transparent, Real-Time Pricing</h4>
+//           <p>
+//             All fares are fresh and accurate — no stale prices or surprises.
+//           </p>
+//         </div>
+//       </div>
+//       <div className="whychoose_20">
+//         <div className="choose_left">
+//           <img src="https://www.flightsmojo.in/images/customer-support.svg" alt="icon" />
+//         </div>
+//         <div className="choose_right">
+//           <h4>24x7 Flight Support</h4>
+//           <p>Ticket issues? Re-validations? Our agents speak airline.</p>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
   );
 }
 

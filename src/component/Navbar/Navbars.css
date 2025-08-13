@@ -1373,7 +1373,7 @@
   position: absolute;
   top: 100%;
   top: 40px;
-  z-index: 9999;
+  z-index: 999999999;
 
 }
 .nav-item.moreTravel:hover .option-list {
@@ -1383,9 +1383,9 @@
 }
 
 .nav-item.moreTravel .option-list ul.first-menu {
-  min-width: 242px;
+  min-width: 250px;
   padding: 16px 0;
-  width: 242px;
+  width: 250px;
   list-style: none;
   margin: 0;
 }
@@ -1568,7 +1568,7 @@
   letter-spacing: -0.15px;
   line-height: 18px;
   white-space: break-spaces;
-  width: 188px;
+  width: 210px;
 }
 .header-right-sec .nav-item.currency-menu {
   position: relative;
@@ -1635,7 +1635,7 @@
   display: flex;
 }
  .header-right-sec .btn-signin span.seprator-slash {
-    color: #fff;
+    color: #000;
         margin: 0;
     opacity: .5;
 }
@@ -1717,4 +1717,10 @@
       background-color: transparent !important;
     margin-bottom: -77px !important;
     z-index: 100 !important;
+}
+.header-right-sec .utility__phone:hover {
+    background-color: #00ab5326;
+}.utility__phone:hover .tooltip-feature {
+    display: flex
+;
 }

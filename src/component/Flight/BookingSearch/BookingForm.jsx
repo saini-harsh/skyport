@@ -772,21 +772,21 @@ const BookingForm = () => {
 
       imgMark: "/Images/dream-feather-bg.png",
       title: "Your Gateway to the World",
-      subtitle: "Anytime. Anywhere",
+      subtitle: "Anytime Anywhere",
     },
     {
       backgroundImage: "/Images/guyana-kaieteur-falls.jpg",
       overlayColor: "#190a0a",
       imgMark: "/Images/dream-feather-bg.png",
       title: "Your Gateway to the World",
-      subtitle: "Anytime. Anywhere",
+      subtitle: "Anytime Anywhere",
     },
     {
       backgroundImage: "/Images/guyana-tourism.jpg",
       overlayColor: "#190a0a",
       imgMark: "/Images/dream-feather-bg.png",
       title: "Your Gateway to the World",
-      subtitle: "Anytime. Anywhere",
+      subtitle: "Anytime Anywhere",
     },
   ];
 
@@ -865,7 +865,7 @@ const BookingForm = () => {
                   style={{
                     height: "100%",
                     backgroundColor: slide.overlayColor,
-                    opacity: slide.overlayOpacity || "0.8",
+                    opacity: slide.overlayOpacity || "0.5",
                   }}
                 ></div>
 
@@ -895,6 +895,35 @@ const BookingForm = () => {
               data-cy="flightSW"
               className="fltWidgetSection appendBottom40 primaryTraveler "
             >
+              {/* <div className="searchtabslist">
+                <ul className=" search_tabs">
+                  <li className="tab-link ">
+                    <a className="current  flights">
+                      <span>
+                        <i className="fa-solid fa-plane-departure" /> Flight{" "}
+                      </span>
+                    </a>
+                  </li>
+                  <li className="tab-link ">
+                    <a className="">
+                      <span>
+                        {" "}
+                        <i className="fa-solid fa-building" /> Hotel{" "}
+                      </span>
+                    </a>
+                  </li>
+
+                  <li className="tab-link ">
+                    <a className="">
+                      <span>
+                        {" "}
+                        <i className="fa-solid fa-umbrella-beach" /> Holidays{" "}
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div> */}
+
               <div className="makeFlex hrtlCenter">
                 <div
                   style={{

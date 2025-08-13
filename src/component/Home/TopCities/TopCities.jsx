@@ -196,7 +196,7 @@ const TopCities = () => {
                       {item.data.map((datas, i) => (
                         <>
                           <Link
-                            to={datas.link}
+                            // to={datas.link}
                             className="text-[#1d489f] text-decoration-none"
                           >
                             {datas.destination}
