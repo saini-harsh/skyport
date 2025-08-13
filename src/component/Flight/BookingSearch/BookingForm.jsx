@@ -850,7 +850,7 @@ const BookingForm = () => {
           }}
           modules={[Autoplay, Pagination]}
           className="mySwiper"
-          style={{ height: "340px" }}
+          style={{ height: "425px" }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>

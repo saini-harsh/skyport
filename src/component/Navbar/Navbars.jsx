@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import Lelo from "./logo-lelotrip.png";
 import "./Navbars.css";
@@ -13,7 +14,7 @@ import {
   FaUserAlt,
   FaUserCircle,
   FaPlane,
-  FaChevronDown
+  FaChevronDown,
 } from "react-icons/fa";
 import { IoMdGlobe, IoMdNotificationsOutline } from "react-icons/io";
 import {
@@ -156,7 +157,7 @@ const Navbars = () => {
         className="p-0"
         collapseOnSelect
         expanded={expanded}
-        style={{ border: "none",backgroundColor:"#053355"}}
+        style={{ border: "none", backgroundColor: "#053355" }}
       >
         <Container>
           <Navbar.Toggle onClick={handleToggle}>
@@ -417,11 +418,10 @@ const Navbars = () => {
             style={{
               order: expanded && "4",
               paddingBottom: expanded && "10px",
+              marginTop: "20px",
             }}
           >
             <Nav className="me-auto py-4 py-lg-0">
- 
-
               {/* <NavDropdown
                 title={
                   <span style={{ display: 'flex', alignItems: 'center',flexDirection:"row", color: '#ffffff', fontWeight: 600 }}>
@@ -436,7 +436,97 @@ const Navbars = () => {
                   <FaPlane className="dropdown-icon" />
                   Flight
                 </NavDropdown.Item>
-              </NavDropdown> */}
+              </NavDropdown>  */}
+
+              <div className="nav-item moreTravel">
+                <button className="more-travel-btn">
+                  <span>More Travel</span>
+                  <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                  </svg>
+                </button>
+                <div className="option-list ">
+                  <ul className="first-menu">
+                    <li>
+                      <a
+                        tabIndex={0}
+                        title="Flights"
+                        className="item-link "
+                        href="//www.onetravel.com/cheap-flights"
+                      >
+                        <div className="left-sec">
+                          <svg
+                            viewBox="0 0 20 20"
+                            className="sv svg-1-25 text-gray-700  "
+                            aria-hidden="true"
+                          >
+                            <use className="sv-icon" xlinkHref="#flights_v2" />
+                          </svg>
+                          Flights
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        tabIndex={0}
+                        title="Hotels"
+                        className="item-link "
+                        href="//www.onetravel.com/hotels"
+                      >
+                        <div className="left-sec">
+                          <svg
+                            viewBox="0 0 20 20"
+                            className="sv svg-1-25 text-gray-700  "
+                            aria-hidden="true"
+                          >
+                            <use className="sv-icon" xlinkHref="#hotels_v2" />
+                          </svg>
+                          Hotels
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        tabIndex={0}
+                        title="Cars"
+                        className="item-link "
+                        href="//www.onetravel.com/car-rentals"
+                      >
+                        <div className="left-sec">
+                          <svg
+                            viewBox="0 0 20 20"
+                            className="sv svg-1-25 text-gray-700  "
+                            aria-hidden="true"
+                          >
+                            <use className="sv-icon" xlinkHref="#car_v2" />
+                          </svg>
+                          Cars
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        tabIndex={0}
+                        title="Packages"
+                        className="item-link "
+                        href="//www.onetravel.com/vacations"
+                      >
+                        <div className="left-sec">
+                          <svg
+                            viewBox="0 0 20 20"
+                            className="sv svg-1-25 text-gray-700  "
+                            aria-hidden="true"
+                          >
+                            <use className="sv-icon" xlinkHref="#package_v2" />
+                          </svg>
+                          Packages
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
               {/* <Nav.Link
                 as={Link}
                 to="/"
@@ -448,13 +538,11 @@ const Navbars = () => {
                   width={40}
                   alt="Flights Icon"
                   className="navbar_icons_Image"
-              
                 />
                 Flights
-              </Nav.Link> */}
+              </Nav.Link>
 
-
-              {/* <Nav.Link
+              <Nav.Link
                 as={Link}
                 to="/hotel"
                 className="d-flex align-items-center hvr-underline-reveal"
@@ -512,19 +600,19 @@ const Navbars = () => {
                 Cabs
               </Nav.Link>
 
-                <Nav.Link
-                  as={Link}
-                  to="/bookings/flight"
-                  onClick={() => setExpanded(false)}
-                  className="d-flex align-items-center hvr-underline-reveal"
-                >
-                  <img
-                    src="/Images/Icons/mybookingss.png"
-                    alt="My Bookings"
-                    style={{ height: "28px", width: "28px", marginRight: "8px" }}
-                  />
-                  My Bookings
-                </Nav.Link> */}
+              <Nav.Link
+                as={Link}
+                to="/bookings/flight"
+                onClick={() => setExpanded(false)}
+                className="d-flex align-items-center hvr-underline-reveal"
+              >
+                <img
+                  src="/Images/Icons/mybookingss.png"
+                  alt="My Bookings"
+                  style={{ height: "28px", width: "28px", marginRight: "8px" }}
+                />
+                My Bookings
+              </Nav.Link> */}
 
               {/* <Nav
                 className="ml-auto support_link"
@@ -701,11 +789,10 @@ const Navbars = () => {
                 </NavDropdown>
               </Nav> */}
             </Nav>
-            <div
+            {/* <div
               className="flex flex-middle px-1"
               style={{ marginLeft: "12px" }}
             >
-              
               <div className="d-flex c-pointer">
                 <button
                   onClick={handleAuthClick}
@@ -720,6 +807,106 @@ const Navbars = () => {
                   {isAuth ? "Logout" : "Log In / Sign Up"}
                 </button>
               </div>
+            </div> */}
+
+            <div className="header-right-sec">
+              <a
+                href="tel:+592 615 8808"
+                role="button"
+                className="utility__phone utility__phone-number is-active inner"
+                aria-label="1-646-738-4863 Book Now - Call us 24/7"
+              >
+                <div
+                  className="utility__phone-number-image"
+                  width={42}
+                  height={42}
+                >
+                  <span className="dialer" />
+                </div>
+                <span className="utility__phone-msg" id="utility__phone-msg">
+                  <b id="utility__phone-number">+592 615 8808</b>
+                  <span className="d-block travel__expert">
+                    Book Now - Call us 24/7
+                  </span>
+                </span>
+                <div className="tooltip-feature">
+                  <div className="benefits-title">
+                    Benefits of booking with an agent
+                  </div>
+                  <div className="benefits-content">
+                    <div className="points-container">
+                      <div className="point-wrap">
+                        <div className="icon-check" />
+                        <div className="content">
+                          Phone only deals available
+                        </div>
+                      </div>
+                      <div className="point-wrap">
+                        <div className="icon-check" />
+                        <div className="content">24 hour cancellation</div>
+                      </div>
+                    </div>
+                    <div className="points-container">
+                      <div className="point-wrap">
+                        <div className="icon-check" />
+                        <div className="content">
+                          Personalized travel assistance
+                        </div>
+                      </div>
+                      <div className="point-wrap">
+                        <div className="icon-check" />
+                        <div className="content">
+                          2X ClubMiles reward points
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              {/* <div className="nav-item currency-menu d-none d-md-block">
+                <button
+                  className=" navigation-link-new currency-btn css-1ujsas3"
+                  type="button"
+                  id="currency-button"
+                >
+                  <span className="flag flag-USD" /> <span>USD $ / EN </span>
+                  <span className="css-1n4a93h">
+                    <svg
+                      className="css-vubbuv"
+                      focusable="false"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      data-testid="ExpandMoreIcon"
+                    >
+                      <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                  </span>
+                  <span className="css-w0pj6f" />
+                </button>
+              </div> */}
+              <div className="nav-item helpMenu">
+                <a className="navigation-link-new" type="link">
+                  Help
+                </a>
+              </div>
+              <button className="btn-signin css-79xub" type="button">
+                <span className="icon_grey">
+                  <svg
+                    viewBox="0 0 18 18"
+                    className="sv svg-1-25 text-gray-700  "
+                    aria-hidden="true"
+                  >
+                    <use className="sv-icon" xlinkHref="#sv_user_new_grey" />
+                  </svg>
+                </span>
+                <span className="icon_blue">
+                  <IoPersonCircleOutline size={23} />
+                </span>
+                <span className="text">
+                  Sign In <span className="seprator-slash">/</span> Join
+                </span>
+                <span className=" css-w0pj6f" />
+              </button>
             </div>
           </Navbar.Collapse>
           <Navbar.Brand as={Link} to="/">
