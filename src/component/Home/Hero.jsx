@@ -49,8 +49,8 @@ const Hero = () => {
       {/* <SliderCode /> */}
       {/* <International /> */}
       {/* <HolidayPackages /> */}
-      <WhyUs />
-      {/* <WhyUss /> */}
+      {/* <WhyUs /> */}
+      <WhyUss />
      {/* <MobileApp 
         backgroundImage="/Images/mobile_app_trip_old.jpeg"
         title="Download Our Mobile App"
