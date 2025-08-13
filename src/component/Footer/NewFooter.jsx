@@ -15,8 +15,8 @@ const tomorrowDate = getTomorrowDate();
 // Static footer links
 const footerLinks = [
   { title: "About Us", link: "/about-us" },
-  { title: "Privacy Policy", link: "" },
-  { title: "Terms & Conditions", link: "" },
+  { title: "Privacy Policy", link: "/privacy-policy" },
+  { title: "Terms & Conditions", link: "/terms-conditions" },
   { title: "Contact Us", link: "/contact" },
   { title: "Offers", link: "/offers" },
 ];

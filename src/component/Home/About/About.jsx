@@ -21,29 +21,29 @@ const About = () => {
             </h2>
             <p>
            Every journey begins with more than a boarding pass.
-It starts with a spark — a desire to explore, to reconnect, to feel alive somewhere new.
-Whether you&#39;re chasing opportunities, escaping to turquoise coastlines, reuniting, or simply
-answering the quiet call of adventure — SkyPort Destinations is your passport to the world.
-SkyPort Destinations is a premium online travel agency specializing exclusively in global flight
-bookings. Designed for the modern traveler, the platform offers a seamless, secure, and
-efficient way to search, compare, and book flights across international routes — all from a
-single, trusted destination. Every aspect of the experience — from search to checkout — has
-been designed to align with international best practices in travel technology and customer
-satisfaction.
-Launched by Guyanese with a vision of connecting the world from our vibrant corner of the
-Caribbean, SkyPort Destinations is driven by a vision to become the leading name in digital air
-travel across the Caribbean and beyond. By prioritizing transparency, innovation, and
-operational excellence, the company aims to reshape how travelers book flights — making it
-smarter, simpler, and more secure.
-SkyPort Destinations represents a new standard in flight booking — built for scale, powered by
-trust, and committed to delivering travel solutions that match the speed and ambition of the
-modern world.
-At SkyPort Destinations, we don’t just book flights — we open the skies to your next story..
+            It starts with a spark — a desire to explore, to reconnect, to feel alive somewhere new.
+            Whether you&#39;re chasing opportunities, escaping to turquoise coastlines, reuniting, or simply
+            answering the quiet call of adventure — SkyPort Destinations is your passport to the world.
+            SkyPort Destinations is a premium online travel agency specializing exclusively in global flight
+            bookings. Designed for the modern traveler, the platform offers a seamless, secure, and
+            efficient way to search, compare, and book flights across international routes — all from a
+            single, trusted destination. Every aspect of the experience — from search to checkout — has
+            been designed to align with international best practices in travel technology and customer
+            satisfaction.
+            Launched by Guyanese with a vision of connecting the world from our vibrant corner of the
+            Caribbean, SkyPort Destinations is driven by a vision to become the leading name in digital air
+            travel across the Caribbean and beyond. By prioritizing transparency, innovation, and
+            operational excellence, the company aims to reshape how travelers book flights — making it
+            smarter, simpler, and more secure.
+            SkyPort Destinations represents a new standard in flight booking — built for scale, powered by
+            trust, and committed to delivering travel solutions that match the speed and ambition of the
+            modern world.
+            At SkyPort Destinations, we don’t just book flights — we open the skies to your next story..
             </p>
           </div>
         </Container>
       </section>
-      {/* <section className="section_padding">
+      <section className="section_padding">
         <Container>
           <Row>
             <Col md={6}>
@@ -118,7 +118,7 @@ At SkyPort Destinations, we don’t just book flights — we open the skies to y
             </Col>
           </Row>
         </Container>
-      </section> */}
+      </section>
       {/* <WhyChoose /> */}
     </div>
   );
