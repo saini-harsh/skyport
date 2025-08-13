@@ -21,35 +21,37 @@ const footerLinks = [
   { title: "Offers", link: "/offers" },
 ];
 
-// Domestic routes
+// Domestic routes (Top Flight Routes from Georgetown)
 const domestic = [
-  { ori: "Delhi", desti: "Goa", link: `/flightList/dest_GOI*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Mumbai", desti: "Delhi", link: `/flightList/dest_DEL*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Kolkata", link: `/flightList/dest_CCU*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Pune", desti: "Delhi", link: `/flightList/dest_DEL*org_PNQ*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Bangalore", desti: "Delhi", link: `/flightList/dest_DEL*org_BLR*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Mumbai", desti: "Bangalore", link: `/flightList/dest_BLR*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Chennai", desti: "Delhi", link: `/flightList/dest_DEL*org_MAA*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Kolkata", desti: "Delhi", link: `/flightList/dest_DEL*org_CCU*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Mumbai", link: `/flightList/dest_BOM*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Bangalore", link: `/flightList/dest_BLR*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Mumbai", desti: "Goa", link: `/flightList/dest_GOI*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Port of Spain", link: `/flightList/dest_POS*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Bridgetown", link: `/flightList/dest_BGI*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Nassau", link: `/flightList/dest_NAS*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "St. John’s", link: `/flightList/dest_ANU*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Providenciales", link: `/flightList/dest_PLS*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Willemstad", link: `/flightList/dest_CUR*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Punta Cana", link: `/flightList/dest_PUJ*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Panama City", link: `/flightList/dest_PTY*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Oranjestad", link: `/flightList/dest_AUA*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "São Paulo", link: `/flightList/dest_GRU*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "New York", link: `/flightList/dest_JFK*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Toronto", link: `/flightList/dest_YYZ*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
 ];
 
-// International routes
+// International routes – Trip of a Lifetime
 const international = [
-  { ori: "Delhi", desti: "Singapore", link: `/flightList/dest_SIN*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Bangkok", link: `/flightList/dest_BKK*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Mumbai", desti: "Dubai", link: `/flightList/dest_DXB*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Dubai", link: `/flightList/dest_DXB*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "London", link: `/flightList/dest_LHR*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Toronto", link: `/flightList/dest_YYZ*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "New York", link: `/flightList/dest_JFK*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Bangalore", desti: "Singapore", link: `/flightList/dest_SIN*org_BLR*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Paris", link: `/flightList/dest_CDG*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Mumbai", desti: "Paris", link: `/flightList/dest_CDG*org_BOM*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
-  { ori: "Delhi", desti: "Hong Kong", link: `/flightList/dest_HKG*org_DEL*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Dubai", link: `/flightList/dest_DXB*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Mumbai", link: `/flightList/dest_BOM*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Paris", link: `/flightList/dest_CDG*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "London", link: `/flightList/dest_LHR*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Rome", link: `/flightList/dest_FCO*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Tokyo", link: `/flightList/dest_HND*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Cape Town", link: `/flightList/dest_CPT*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Bora Bora", link: `/flightList/dest_BOB*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Beijing", link: `/flightList/dest_PEK*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Santorini", link: `/flightList/dest_JTR*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
+  { ori: "Georgetown", desti: "Sydney", link: `/flightList/dest_SYD*org_GEO*dep_${tomorrowDate}*arr_${tomorrowDate}*px_1-0-0*jt_1*cbn_2` },
 ];
+
 
 // Menu structure
 const menuData = [
@@ -59,8 +61,8 @@ const menuData = [
     links: footerLinks.map(item => ({ text: item.title, href: item.link })),
   },
   {
-    label: 'Popular Flights',
-    heading: 'Domestic Flights',
+    label: 'Top Flight Routes',
+    heading: 'Top Flight Routes',
     columns: [
       domestic.slice(0, 6).map(item => ({
         text: `${item.ori} to ${item.desti} Flights`,
@@ -73,8 +75,8 @@ const menuData = [
     ],
   },
   {
-    label: 'International Flights',
-    heading: 'International Flights',
+    label: 'International Flight',
+    heading: 'International Flight',
     columns: [
       international.slice(0, 6).map(item => ({
         text: `${item.ori} to ${item.desti} Flights`,
@@ -89,10 +91,9 @@ const menuData = [
 ];
 
 const socialIcons = [
-  { icon: 'fab fa-facebook-f', label: 'Facebook', link: '#' },
+  { icon: 'fab fa-facebook-f', label: 'Facebook', link: 'https://www.facebook.com/share/16vgLnkcFf/' },
   { icon: 'fab fa-x-twitter', label: 'Twitter', link: '#' },
-  { icon: 'fab fa-instagram', label: 'Instagram', link: '#' },
-  { icon: 'fab fa-tiktok', label: 'TikTok', link: '#' },
+  { icon: 'fab fa-instagram', label: 'Instagram', link: 'https://www.instagram.com/skyport.destinations?igsh=MXRkcWFjcDJrNjM5dg==' },
 ];
 
 const NewFooter = () => {

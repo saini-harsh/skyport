@@ -21,6 +21,8 @@ import WhyUss from "./Home/WhyUss";
 import Deals from "../Flight/FlightSearchMobile/Deals";
 import { Container } from "react-bootstrap";
 import FlightDeals from "../Flight/BookingSearch/FlightDeals";
+import EnquiryPopup from "../TourPackages/Common/EnquiryPopup";
+import EnquiryIcons from "../TourPackages/Common/EnquiryIcons";
 
 const Hero = () => {
   return (
@@ -56,6 +58,7 @@ const Hero = () => {
       /> */}
 
       <AboutHome />
+      <EnquiryPopup/>
     </div>
   );
 };

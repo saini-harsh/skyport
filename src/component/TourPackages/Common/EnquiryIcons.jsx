@@ -8,7 +8,7 @@ const EnquiryIcons = ({ destination }) => {
     const location = useLocation();
     // console.log("Destination",destination);
     
-    const isTourPage = location.pathname === "/tour";
+    const isTourPage = location.pathname === "/";
 
 
     const [showModal, setShowModal] = useState(false);

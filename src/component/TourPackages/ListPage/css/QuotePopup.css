@@ -84,13 +84,13 @@
   font-size: 16px;
   /* background: #ff2828;
   border: 1px solid #ff2828; */
-  background: linear-gradient(20deg,#f73030 20%,#1d489f);
+  background: #053355;
   border-radius: 40px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 .pkgform-wrapper button:hover{
-  background: linear-gradient(20deg, #1d489f 20%,#f73030);
+  background: #f2bc06;
 }
 @media (min-width: 576px) {
   .modal .modal-dialog {
