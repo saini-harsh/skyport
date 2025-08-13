@@ -23,6 +23,7 @@ const FlightDeals = () => {
 
   return (
     <div className="alldealTab">
+      
       <Container className="deal-section dealSection">
         <h2 className="blueHead dealHeading">
           Cheap International Flight Deals*
