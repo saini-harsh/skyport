@@ -2,7 +2,7 @@
   background: #053355;
   color: #fff;
   padding: 40px 0 0 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+   
 }
 .footer-content {
   display: flex;
@@ -126,7 +126,16 @@
   background: #053355;
   color: #fff;
   padding: 0 0 0 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+   width: 100%;
+    float: left;
+    padding: 20px 0;
+    /* background-color: #000; */
+    background-image: url("https://www.flightsmojo.in/images/footer_bg.png");
+    background-size: 1366px auto;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 144px;
+  /* font-family: 'Segoe UI', Arial, sans-serif; */
 }
 .footer-twopane-content {
   display: flex;

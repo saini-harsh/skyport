@@ -1712,3 +1712,9 @@
     transform: rotate(0deg);
   }
 }
+
+.navbar-home_sky{
+      background-color: transparent !important;
+    margin-bottom: -77px !important;
+    z-index: 100 !important;
+}

@@ -343,9 +343,6 @@ const BookingForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-
-
-  
     const cabinMapping = {
       Economy: 2,
       "Premium Economy": 3,
@@ -770,29 +767,27 @@ const BookingForm = () => {
   };
   const slides = [
     {
-      backgroundImage:
-      "",
-      overlayColor: "#053355",
+      backgroundImage: "/Images/georgetown-skyline.jpg",
+      overlayColor: "#190a0a",
+
       imgMark: "/Images/dream-feather-bg.png",
       title: "Your Gateway to the World",
       subtitle: "Anytime. Anywhere",
-    }
-    // {
-    //   backgroundImage:
-    //     "https://img.freepik.com/premium-photo/view-from-airplane-window-with-blue-sky-clouds_125869-683.jpg?w=996",
-    //   overlayColor: "#190a0a",
-    //   imgMark: "/Images/dream-feather-bg.png",
-    //   title: "Unlock Exclusive Flight Offers",
-    //   subtitle: "Hotel Discounts, and Business Travel Solutions Today",
-    // },
-    // {
-    //   backgroundImage:
-    //     "https://img.freepik.com/premium-photo/passenger-airplane-flying-night-clouds-amazing-sky-sunset_475211-5.jpg?w=900",
-    //   overlayColor: "#190a0a",
-    //   imgMark: "/Images/dream-feather-bg.png",
-    //   title: "Experience Hassle-Free Bookings",
-    //   subtitle: "Luxury Travel, and Unmatched Service Only on TripGo",
-    // },
+    },
+    {
+      backgroundImage: "/Images/guyana-kaieteur-falls.jpg",
+      overlayColor: "#190a0a",
+      imgMark: "/Images/dream-feather-bg.png",
+      title: "Your Gateway to the World",
+      subtitle: "Anytime. Anywhere",
+    },
+    {
+      backgroundImage: "/Images/guyana-tourism.jpg",
+      overlayColor: "#190a0a",
+      imgMark: "/Images/dream-feather-bg.png",
+      title: "Your Gateway to the World",
+      subtitle: "Anytime. Anywhere",
+    },
   ];
 
   const [showContent, setShowContent] = useState(false);
@@ -813,20 +808,20 @@ const BookingForm = () => {
 
   console.log("CACHE DATAaaa", cacheData);
   const handleSwapCities = () => {
-  // Swap the input values
-  const tempSearchInput = searchInput;
-  const tempSearchedAirport = searchedAirport;
+    // Swap the input values
+    const tempSearchInput = searchInput;
+    const tempSearchedAirport = searchedAirport;
 
-  setSearchInput(searchInput2);
-  setSearchedAirport(searchedAirport2);
+    setSearchInput(searchInput2);
+    setSearchedAirport(searchedAirport2);
 
-  setSearchInput2(tempSearchInput);
-  setSearchedAirport2(tempSearchedAirport);
+    setSearchInput2(tempSearchInput);
+    setSearchedAirport2(tempSearchedAirport);
 
-  // Optional: also reset selection flags if needed
-  SetClickDestination(false);
-  SetClickDestination2(false);
-};
+    // Optional: also reset selection flags if needed
+    SetClickDestination(false);
+    SetClickDestination2(false);
+  };
 
   return (
     <div
@@ -850,7 +845,7 @@ const BookingForm = () => {
           }}
           modules={[Autoplay, Pagination]}
           className="mySwiper"
-          style={{ height: "425px" }}
+          style={{ height: "500px" }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
@@ -860,7 +855,7 @@ const BookingForm = () => {
                   backgroundImage: `url(${slide.backgroundImage})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                  backgroundColor:"#053355",
+                  backgroundColor: "#053355",
                 }}
                 data-v-0b3b4b19=""
                 data-v-b9cf504c=""
@@ -868,7 +863,7 @@ const BookingForm = () => {
                 <div
                   className=""
                   style={{
-                    height:"100%",
+                    height: "100%",
                     backgroundColor: slide.overlayColor,
                     opacity: slide.overlayOpacity || "0.8",
                   }}
@@ -1046,7 +1041,6 @@ const BookingForm = () => {
                     </div>
                     <span className="fltSwipCircle" onClick={handleSwapCities}>
                       <AiOutlineSwap color="#f73030" size={20} />
-                    
                     </span>
                   </div>
 
@@ -1665,7 +1659,6 @@ const BookingForm = () => {
             </form>
           </div>
         </div>
-    
       </Container>
     </div>
   );

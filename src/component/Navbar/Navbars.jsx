@@ -23,7 +23,7 @@ import {
   MdLogout,
   MdWhatsapp,
 } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SignUp from "./SignUp";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
@@ -144,6 +144,10 @@ const Navbars = () => {
     setShow(true);
   };
 
+
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   return (
     <div className="main-nav">
       <div
@@ -154,9 +158,10 @@ const Navbars = () => {
       <Navbar
         // bg="#053355"
         expand="lg"
-        className="p-0"
+        // className="p-0"
         collapseOnSelect
         expanded={expanded}
+        className={`p-0 ${isHome ? 'navbar-home_sky' : 'navbar-other_sky'}`}
         style={{ border: "none", backgroundColor: "#053355" }}
       >
         <Container>
