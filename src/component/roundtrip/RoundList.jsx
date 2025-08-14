@@ -8,6 +8,13 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import FlightListSkeleton from "../Flight/FlightList/FlightListSkeleton";
 
+
+
+export const formatDuration = (minutes) => {
+  const hrs = String(Math.floor(minutes / 60)).padStart(2, "0");
+  const mins = String(minutes % 60).padStart(2, "0");
+  return `${hrs}h ${mins}m`;
+};
 const RoundList = ({
   search,
   isLoading,
@@ -156,7 +163,7 @@ const RoundList = ({
                                   <li className="price priced">
                                     <span className="airlineprice">
                                       <span className="mainprice">
-                                        ₹{Math.round(e.Fare.PublishedFare)}
+                                        ${Math.round(e.Fare.PublishedFare)}
                                       </span>
                                     </span>
                                   </li>
@@ -209,10 +216,10 @@ const RoundList = ({
                                   </li>
                                   <li>
                                     <span className="duration departdur">
-                                      {e.Segments[0][0].Duration} m
+                                      {formatDuration(e.Segments[0][0].Duration)} 
                                       <span>
                                         <div className="cus_tooltip">
-                                          {e.Segments[0].length - 1 == 0
+                                          {e.Segments[0].length - 1 === 0
                                             ? "Non-Stop"
                                             : `${
                                                 e.Segments[0].length - 1

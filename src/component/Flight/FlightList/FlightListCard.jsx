@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Card, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FlightListInfo } from "./FlightListInfo";
+export const formatDuration = (minutes) => {
+  const hrs = String(Math.floor(minutes / 60)).padStart(2, "0");
+  const mins = String(minutes % 60).padStart(2, "0");
+  return `${hrs}h ${mins}m`;
+};
 
 const FlightListCard = ({
   e,
@@ -18,6 +23,7 @@ const FlightListCard = ({
   activeFlightId,
   key,
 }) => {
+  
   const index = encodeURIComponent(e.ResultIndex);
   const SrdvIndex = e.SrdvIndex ? encodeURIComponent(e.SrdvIndex) : null;
 
@@ -74,7 +80,7 @@ const FlightListCard = ({
                         </p>
                         {/* <p className="flightBookingDetailslightNumer">{e.flightNumber}</p> */}
                         <p className="flightBookingDetailPrice">
-                          ₹{Math.round(e.Fare.PublishedFare)}
+                          ${Math.round(e.Fare.PublishedFare)}
                         </p>
                       </div>
                     </div>
@@ -92,7 +98,7 @@ const FlightListCard = ({
                         <p>{e.Segments[0][0].Origin.Airport.CityName}</p>
                       </div>
                       <div className="durationDetails">
-                        <p>{e.Segments[0][0].Duration} m</p>
+                        <p>{formatDuration(e.Segments[0][0].Duration)}</p>
                         <div className="arrow-md-lm flightHorizontal" />
                         <p style={{ textWrap: "nowrap" }}>
                           {/* {e.flightType} */}
@@ -131,17 +137,19 @@ const FlightListCard = ({
                                   alt=""
                               /> */}
                         <p>
-                          {/* <FaRupeeSign /> */}₹
+                          {/* <FaRupeeSign /> */}
+                          $
                           {Math.round(e.Fare.PublishedFare)}
                         </p>
                       </div>
-                      {e.IsUpsellAllowed === true && (<button
-                        className="flightBookingMoreFare"
-                        onClick={() => handleMoreFare(e.ResultIndex)}
-                      >
-                        + More Fare
-                      </button>)}
-                      
+                      {e.IsUpsellAllowed === true && (
+                        <button
+                          className="flightBookingMoreFare"
+                          onClick={() => handleMoreFare(e.ResultIndex)}
+                        >
+                          + More Fare
+                        </button>
+                      )}
                     </div>
                     <Link
                       to={url}
@@ -160,7 +168,7 @@ const FlightListCard = ({
                 {/* <Row style={{ margin: "0px", padding: "0px" }}>
                 <div className="offPriceDiv">
                 <p style={{ color: "black" }}>
-                  Use Promo code: EASEFLY to get ₹300
+                  Use Promo code: EASEFLY to get $300
                 instant discount on
                   this flight
                 </p>
@@ -305,7 +313,7 @@ const FlightListCard = ({
                                 <div className="fflx acntr">
                                   <div className="prce_mn ng-binding">
                                     {/* <FaRupeeSign /> */}
-                                    {/* {e.Fare.Currency} */}₹{" "}
+                                    {/* {e.Fare.Currency} */}${" "}
                                     {Math.round(e.Fare.PublishedFare)}
                                   </div>
                                   <div className="clr"></div>
@@ -316,12 +324,7 @@ const FlightListCard = ({
                               </div>
                               <div className="slct_optn">
                                 <label className="conta-radio">
-                                  <input
-                                    type="radio"
-                                    className="ddsd"
-                                  
-                                  
-                                  />
+                                  <input type="radio" className="ddsd" />
                                   <span className="checkk-radio"></span>
                                 </label>
                               </div>
@@ -364,13 +367,13 @@ const FlightListCard = ({
                                   <li className="_cabinfcnl">
                                     Cancellation fee starts at{" "}
                                     <strong>
-                                      ₹ {handleChnageCurrency("2500")}
+                                      $ {handleChnageCurrency("2500")}
                                     </strong>
                                   </li>
                                   <li className="_cabinfcnl">
                                     Date Change fee starts at{" "}
                                     <strong>
-                                      ₹ {handleChnageCurrency("2750")}
+                                      $ {handleChnageCurrency("2750")}
                                     </strong>
                                   </li>
                                 </ul>
@@ -397,9 +400,7 @@ const FlightListCard = ({
                     <div className="_nhyuop">
                       <div className="_prgty">Grand Total</div>
                       <div className="_finpric f30">
-                        <span>
-                          ₹ {Math.round(e.Fare.PublishedFare)}
-                        </span>
+                        <span>$ {Math.round(e.Fare.PublishedFare)}</span>
                       </div>
                     </div>
                     <div
@@ -463,7 +464,7 @@ const FlightListCard = ({
                     <span className="gray_dot--solid sml-dot-l" />
 
                     <span className="text_gray text-center ng-binding">
-                      {e.Segments[0][0].Duration} m
+                      {formatDuration(e.Segments[0][0].Duration)}
                     </span>
 
                     <span className="gray_dot--solid sml-dot-r" />
@@ -528,7 +529,13 @@ const FlightListCard = ({
                       ? " - Less Fare"
                       : "+ More Fare"}
                   </a>
-                  <p style={{ color: "#4CAF50",fontSize:'10px',fontWeight:'500' }}>
+                  <p
+                    style={{
+                      color: "#4CAF50",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                    }}
+                  >
                     Get Rs 200 Off | code BOOKNOW
                   </p>
                 </div>
@@ -732,8 +739,7 @@ const FlightListCard = ({
                       <span className="CurrncyCD_Rs pricr-nerw" />
 
                       <span className="pricr-nerw ng-binding ng-scope">
-                        {
-                        e.Fare.PublishedFare}
+                        {e.Fare.PublishedFare}
                       </span>
                     </div>
                     <div className="btsub">

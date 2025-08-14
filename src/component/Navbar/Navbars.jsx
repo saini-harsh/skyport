@@ -452,7 +452,7 @@ const Navbars = () => {
                 <div className="option-list ">
                   <ul className="first-menu">
                     <li>
-                      <Link className="item-link " to="/flight">
+                      <Link className="item-link " to="/">
                         <div className="left-sec">
                           <img
                             src="https://cdn-icons-png.freepik.com/512/15804/15804019.png"
@@ -496,7 +496,7 @@ const Navbars = () => {
                             src="https://cdn-icons-png.freepik.com/512/712/712067.png?ga=GA1.1.1727314930.1755079763"
                             // src="https://cdn-icons-png.freepik.com/512/6381/6381883.png"
                             alt=""
-                            style={{ height: "32px", width: "35px" }}
+                            style={{ height: "32px", width: "32px" }}
                           />
                           {/* <svg
                             viewBox="0 0 20 20"

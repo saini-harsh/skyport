@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "./BookingForm.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container, Row, Col, Card, Form } from "react-bootstrap";
+import { Container, Row, Col, Card, Form, Spinner } from "react-bootstrap";
 import { BsArrowLeftRight } from "react-icons/bs";
 // import FlightDeal from "../../../components/MainHome/Home/innerComponents/FlightDeal";
 import { MdFlight, MdOutlineFlight } from "react-icons/md";
@@ -584,130 +584,154 @@ const BookingForm = () => {
   const [cities2, setCities2] = useState([]);
   const [cities22, setCities22] = useState([]);
 
-  const fetchDatas = (value) => {
-    fetch("https://admin.tripgoonline.com/api/airport")
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.data
-          .filter((user) => {
-            return (
-              user &&
-              ((user.CITYNAME &&
-                user.CITYNAME.toLowerCase().includes(value.toLowerCase())) ||
-                (user.AIRPORTNAME &&
-                  user.AIRPORTNAME.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.CITYCODE &&
-                  user.CITYCODE.toLowerCase().includes(value.toLowerCase())) ||
-                (user.COUNTRYNAME &&
-                  user.COUNTRYNAME.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.COUNTRYCODE &&
-                  user.COUNTRYCODE.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.AIRPORTCODE &&
-                  user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())))
-            );
-          })
-          .map((user) => {
-            let priority = 3;
+ const fetchDatas = async (value) => {
+    // fetch("https://admin.tripgoonline.com/api/airport")
+    try {
+      const requestData = {
+        city: value,
+      };
 
-            if (
-              user.AIRPORTCODE &&
-              user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 1; // Highest priority for city code matches
-            } else if (
-              user.CITYNAME &&
-              user.CITYNAME.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 2; // Second priority for city name matches
-            } else if (
-              user.COUNTRYNAME &&
-              user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 3; // Third priority for country name matches
-            }
+      const response = await axios.post(
+        "https://admin.tripgoonline.com/api/airport",
+        requestData
+      );
 
-            return { ...user, priority };
-          })
-          .sort((a, b) => a.priority - b.priority);
+      // If API returns JSON directly in response.data
+      const json = response.data;
+      console.log("json responseee", json);
+      const results = json.data
+        .filter((user) => {
+          return (
+            user &&
+            ((user.CITYNAME &&
+              user.CITYNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.AIRPORTNAME &&
+                user.AIRPORTNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.CITYCODE &&
+                user.CITYCODE.toLowerCase().includes(value.toLowerCase())) ||
+              (user.COUNTRYNAME &&
+                user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.COUNTRYCODE &&
+                user.COUNTRYCODE.toLowerCase().includes(value.toLowerCase())) ||
+              (user.AIRPORTCODE &&
+                user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())))
+          );
+        })
+        .map((user) => {
+          let priority = 3;
 
-        console.log("RESULTS", results);
-        setCities2(results);
-      });
+          if (
+            user.AIRPORTCODE &&
+            user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 1; // Highest priority for city code matches
+          } else if (
+            user.CITYNAME &&
+            user.CITYNAME.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 2; // Second priority for city name matches
+          } else if (
+            user.COUNTRYNAME &&
+            user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 3; // Third priority for country name matches
+          }
+
+          return { ...user, priority };
+        })
+        .sort((a, b) => a.priority - b.priority);
+
+      console.log("RESULTS", results);
+      setCities2(results);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   const handleInputChange = (value) => {
     setSearchInput(value.toLowerCase());
-    fetchDatas(value.toLowerCase());
+    // fetchDatas(value.toLowerCase());
     SetClickDestination(true);
     setIsItemSelected(false);
+    if (value.length === 3) {
+      fetchDatas(value.toLowerCase());
+    } else {
+      setCities2([]); // clear suggestions if less than 3 characters
+    }
   };
-  const fetchDatass = (value) => {
-    fetch("https://admin.tripgoonline.com/api/airport")
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.data
-          .filter((user) => {
-            return (
-              user &&
-              ((user.CITYNAME &&
-                user.CITYNAME.toLowerCase().includes(value.toLowerCase())) ||
-                (user.AIRPORTNAME &&
-                  user.AIRPORTNAME.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.CITYCODE &&
-                  user.CITYCODE.toLowerCase().includes(value.toLowerCase())) ||
-                (user.COUNTRYNAME &&
-                  user.COUNTRYNAME.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.COUNTRYCODE &&
-                  user.COUNTRYCODE.toLowerCase().includes(
-                    value.toLowerCase()
-                  )) ||
-                (user.AIRPORTCODE &&
-                  user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())))
-            );
-          })
-          .map((user) => {
-            let priority = 3;
+  const fetchDatass = async (value) => {
+    try {
+      const requestData = {
+        city: value,
+      };
 
-            if (
-              user.AIRPORTCODE &&
-              user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 1; // Highest priority for city code matches
-            } else if (
-              user.CITYNAME &&
-              user.CITYNAME.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 2; // Second priority for city name matches
-            } else if (
-              user.COUNTRYNAME &&
-              user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())
-            ) {
-              priority = 3; // Third priority for country name matches
-            }
+      const response = await axios.post(
+        "https://admin.tripgoonline.com/api/airport",
+        requestData
+      );
 
-            return { ...user, priority };
-          })
-          .sort((a, b) => a.priority - b.priority);
+      // If API returns JSON directly in response.data
+      const json = response.data;
+      console.log("json responseee", json);
 
-        // console.log("RESULTS",results)
-        setCities22(results);
-      });
+      const results = json.data
+        .filter((user) => {
+          return (
+            user &&
+            ((user.CITYNAME &&
+              user.CITYNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.AIRPORTNAME &&
+                user.AIRPORTNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.CITYCODE &&
+                user.CITYCODE.toLowerCase().includes(value.toLowerCase())) ||
+              (user.COUNTRYNAME &&
+                user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())) ||
+              (user.COUNTRYCODE &&
+                user.COUNTRYCODE.toLowerCase().includes(value.toLowerCase())) ||
+              (user.AIRPORTCODE &&
+                user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())))
+          );
+        })
+        .map((user) => {
+          let priority = 3;
+
+          if (
+            user.AIRPORTCODE &&
+            user.AIRPORTCODE.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 1; // Highest priority for city code matches
+          } else if (
+            user.CITYNAME &&
+            user.CITYNAME.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 2; // Second priority for city name matches
+          } else if (
+            user.COUNTRYNAME &&
+            user.COUNTRYNAME.toLowerCase().includes(value.toLowerCase())
+          ) {
+            priority = 3; // Third priority for country name matches
+          }
+
+          return { ...user, priority };
+        })
+        .sort((a, b) => a.priority - b.priority);
+
+      // console.log("RESULTS",results)
+      setCities22(results);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
   const handleInputChange2 = (value) => {
     setSearchInput2(value.toLowerCase());
-    fetchDatass(value.toLowerCase());
+
     SetClickDestination2(true);
     setIsItemSelected2(false);
+    if (value.length === 3) {
+      fetchDatass(value.toLowerCase());
+    } else {
+      setCities22([]); // clear suggestions if less than 3 characters
+    }
   };
 
   const [flightBookingsData, setFlightBookingsData] = useState([]);
@@ -1012,60 +1036,92 @@ const BookingForm = () => {
                           scrollbarWidth: "thin",
                         }}
                       >
-                        {cities2.map((city, index) => (
-                          //                           <div className="after_search_city"
-                          // >
-                          //   <div className="mflexcol" onClick={() => handleCitySelect(city)}>
-                          //     <img src="https://www.easemytrip.com/Content/img/planeicon.svg" alt="Flight" className="mgr10" />
-                          //     <div>
-                          //       <p>
-                          //         <span id="spn12" className="flsctrhead">
-                          //            {city["CITYNAME"]}
-                          //                                       ({city["CITYCODE"]})
-                          //         </span>
-                          //       </p>
-                          //       <p id="airport12" className="autosrpt">
-                          //         {city["AIRPORTNAME"]}
-                          //       </p>
-                          //     </div>
-                          //     <div className="flcountry">  {city["COUNTRYNAME"]} </div>
-                          //   </div>
-                          // </div>
-                          <div
-                            role="option"
-                            id="react-autowhatever-1-section-0-item-0"
-                            aria-selected="false"
-                            className="react-autosuggest__suggestion react-autosuggest__suggestion--first"
-                            onClick={() => handleCitySelect(city)}
-                          >
-                            <div className="makeFlex">
-                              <img
-                                className="icLocAlt appendRight8-bookings_form"
-                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/ic-flight-onward.png"
-                                alt="icon"
-                              />
-                              <div className="makeFlex flexOne column">
-                                <div className="makeFlex flexOne spaceBetween">
-                                  <div className="makeFlex flexOne spaceBetween appendRight10">
-                                    <div className="makeFlex column flexOne appendRight10">
-                                      <p className="font_search_bookingss appendBottom5 blackText">
-                                        {city["CITYNAME"]},{" "}
-                                        {city["COUNTRYNAME"]}
-                                      </p>
-                                    </div>
+                        {" "}
+                        {cities2.length !== 0 ? (
+                          <>
+                            {cities2.map((city, index) => (
+                              <div className="after_search_city">
+                                <div
+                                  className="mflexcol"
+                                  onClick={() => handleCitySelect(city)}
+                                >
+                                  <img
+                                    src="https://www.easemytrip.com/Content/img/planeicon.svg"
+                                    alt="Flight"
+                                    className="mgr10"
+                                  />
+                                  <div>
+                                    <p>
+                                      <span id="spn12" className="flsctrhead">
+                                        {city["CITYNAME"]}({city["CITYCODE"]})
+                                      </span>
+                                    </p>
+                                    <p id="airport12" className="autosrpt">
+                                      {city["AIRPORTNAME"]}
+                                    </p>
                                   </div>
-                                  <div className="font14 lightGreyText latoBold">
-                                    {city["CITYCODE"]}
+                                  <div className="flcountry">
+                                    {" "}
+                                    {city["COUNTRYNAME"]}{" "}
                                   </div>
                                 </div>
-                                <p className="font12_bookingForm_ad greyText appendBottom3 lineHeight14">
-                                  {" "}
-                                  {city["AIRPORTNAME"]}
-                                </p>
                               </div>
-                            </div>
+                              // <div
+                              //   role="option"
+                              //   id="react-autowhatever-1-section-0-item-0"
+                              //   aria-selected="false"
+                              //   className="react-autosuggest__suggestion react-autosuggest__suggestion--first"
+                              //   onClick={() => handleCitySelect(city)}
+                              // >
+                              //   <div className="makeFlex">
+                              //     <img
+                              //       className="icLocAlt appendRight8-bookings_form"
+                              //       src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/ic-flight-onward.png"
+                              //       alt="icon"
+                              //     />
+                              //     <div className="makeFlex flexOne column">
+                              //       <div className="makeFlex flexOne spaceBetween">
+                              //         <div className="makeFlex flexOne spaceBetween appendRight10">
+                              //           <div className="makeFlex column flexOne appendRight10">
+                              //             <p className="font_search_bookingss appendBottom5 blackText">
+                              //               {city["CITYNAME"]},{" "}
+                              //               {city["COUNTRYNAME"]}
+                              //             </p>
+                              //           </div>
+                              //         </div>
+                              //         <div className="font14 lightGreyText latoBold">
+                              //           {city["CITYCODE"]}
+                              //         </div>
+                              //       </div>
+                              //       <p className="font12_bookingForm_ad greyText appendBottom3 lineHeight14">
+                              //         {" "}
+                              //         {city["AIRPORTNAME"]}
+                              //       </p>
+                              //     </div>
+                              //   </div>
+                              // </div>
+                            ))}
+                          </>
+                        ) : (
+                          <div
+                            style={{
+                              padding: "10px 5px",
+                              fontSize: "12px",
+                              textAlign: "center",
+                              margin: "auto",
+                              width: "100%",
+                            }}
+                          >
+                            <Spinner
+                              as="span"
+                              animation="border"
+                              size="sm"
+                              role="status"
+                              aria-hidden="true"
+                            />{" "}
+                            Please wait we are fetching city list...
                           </div>
-                        ))}
+                        )}
                       </div>
                     </div>
                     <span className="fltSwipCircle" onClick={handleSwapCities}>
@@ -1129,42 +1185,57 @@ const BookingForm = () => {
                           scrollbarWidth: "thin",
                         }}
                       >
-                        {cities22.map((city, index) => (
-                          <div
-                            role="option"
-                            id="react-autowhatever-1-section-0-item-0"
-                            aria-selected="false"
-                            className="react-autosuggest__suggestion react-autosuggest__suggestion--first"
-                            onClick={() => handleCitySelect2(city)}
-                          >
-                            <div className="makeFlex">
-                              <img
-                                className="icLocAlt appendRight8-bookings_form"
-                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/ic-flight-onward.png"
-                                alt="icon"
-                              />
-                              <div className="makeFlex flexOne column">
-                                <div className="makeFlex flexOne spaceBetween">
-                                  <div className="makeFlex flexOne spaceBetween appendRight10">
-                                    <div className="makeFlex column flexOne appendRight10">
-                                      <p className="font_search_bookingss appendBottom5 blackText">
-                                        {city["CITYNAME"]},{" "}
-                                        {city["COUNTRYNAME"]}
-                                      </p>
-                                    </div>
+                        {cities22.length !== 0 ? (
+                          <>
+                            {cities22.map((city, index) => (
+                              <div className="after_search_city">
+                                <div
+                                  className="mflexcol"
+                                  onClick={() => handleCitySelect2(city)}
+                                >
+                                  <img
+                                    src="https://www.easemytrip.com/Content/img/planeicon.svg"
+                                    alt="Flight"
+                                    className="mgr10"
+                                  />
+                                  <div>
+                                    <p>
+                                      <span id="spn12" className="flsctrhead">
+                                        {city["CITYNAME"]}({city["CITYCODE"]})
+                                      </span>
+                                    </p>
+                                    <p id="airport12" className="autosrpt">
+                                      {city["AIRPORTNAME"]}
+                                    </p>
                                   </div>
-                                  <div className="font14 lightGreyText latoBold">
-                                    {city["CITYCODE"]}
+                                  <div className="flcountry">
+                                    {" "}
+                                    {city["COUNTRYNAME"]}{" "}
                                   </div>
                                 </div>
-                                <p className="font12_bookingForm_ad greyText appendBottom3 lineHeight14">
-                                  {" "}
-                                  {city["AIRPORTNAME"]}
-                                </p>
                               </div>
-                            </div>
+                            ))}{" "}
+                          </>
+                        ) : (
+                          <div
+                            style={{
+                              padding: "10px 5px",
+                              fontSize: "12px",
+                              textAlign: "center",
+                              margin: "auto",
+                              width: "100%",
+                            }}
+                          >
+                            <Spinner
+                              as="span"
+                              animation="border"
+                              size="sm"
+                              role="status"
+                              aria-hidden="true"
+                            />{" "}
+                            Please wait we are fetching city list...
                           </div>
-                        ))}
+                        )}
                       </div>
                     </div>
                   </div>

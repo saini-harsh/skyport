@@ -11,7 +11,8 @@ import {
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const URLmulticurl = "https://admin.tripgoonline.com/api/search";
+const URLmulticurl = "https://admin.skyportdestinations.com/api/search";
+// const URLmulticurl = "https://admin.tripgoonline.com/api/search";
 const URL = "https://admin.tripgoonline.com/api/flight_search";
 const URLtjRound = "https://admin.tripgoonline.com/api/roundTripSearch";
 

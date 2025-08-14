@@ -13,7 +13,16 @@ export const formatLayoverTime = (arrivalTime, nextDepartureTime) => {
   const layoverHours = Math.floor(layoverMinutes / 60);
   const layoverMinutesRemainder = layoverMinutes % 60;
   return `${layoverHours}h : ${layoverMinutesRemainder}m`;
+};export const formatDuration = (minutes) => {
+  const hrs = String(Math.floor(minutes / 60)).padStart(2, "0");
+  const mins = String(minutes % 60).padStart(2, "0");
+  return `${hrs}h ${mins}m`;
 };
+
+
+
+
+
 
 const InternationalFlightListCard = ({
   e,
@@ -128,7 +137,7 @@ const InternationalFlightListCard = ({
                           <i className="CurrncyCD_Rs" />
 
                           <span className="ng-binding ng-scope">
-                            {Math.round(e.Fare.PublishedFare)}
+                            $ {Math.round(e.Fare.PublishedFare)}
                           </span>
                         </div>
                       </div>
@@ -774,12 +783,12 @@ const InternationalFlightListCard = ({
                   <span className="ti_prc_new ng-scope">
                     <span className="ttl_b_amt CurrncyCD_Rs">
                       {" "}
-                      {Math.round(e.Fare.PublishedFare)}
+                      ${Math.round(e.Fare.PublishedFare)}
                     </span>
                   </span>
                 </div>
                 <div className="dicappl ng-binding ng-scope">
-                  Rs.5250 Discount Applied
+                  $ 5250 Discount Applied
                 </div>
               </div>
             </div>

@@ -1,5 +1,10 @@
 import React from "react";
 import "./DepartDetail.css";
+export const formatDuration = (minutes) => {
+  const hrs = String(Math.floor(minutes / 60)).padStart(2, "0");
+  const mins = String(minutes % 60).padStart(2, "0");
+  return `${hrs}h ${mins}m`;
+};
 const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
   const formatTime = (arrTime) => {
     const date = new Date(arrTime);
@@ -35,6 +40,10 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
     const layoverMinutesRemainder = layoverMinutes % 60;
     return `${layoverHours}h : ${layoverMinutesRemainder}m`;
   };
+
+
+
+  
 
   console.log("flightdepdetail", flight2);
   console.log("flightdepdetail flight3  ", flight3);
@@ -124,7 +133,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                               className="fa fa-clock"
                               style={{ marginRight: "3px" }}
                             />
-                            {segment.Duration} m
+                            {formatDuration(segment.Duration)} 
                           </span>
                           <span className="flightDetailSpantag"></span>
                           <span className="grey_rtbrder">|</span>{" "}
@@ -270,7 +279,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                               className="fa fa-clock"
                               style={{ marginRight: "3px" }}
                             />
-                            {segment.Duration} m
+                            {formatDuration(segment.Duration)} 
                           </span>
                           <span className="flightDetailSpantag"></span>
                           <span className="grey_rtbrder">|</span>{" "}
@@ -414,7 +423,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                               className="fa fa-clock"
                               style={{ marginRight: "3px" }}
                             />
-                            {segment.duration} m
+                            {formatDuration(segment.duration)} 
                           </span>
                           <span className="flightDetailSpantag"></span>
                           <span className="grey_rtbrder">|</span>{" "}
@@ -545,7 +554,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                                 className="fa fa-clock"
                                 style={{ marginRight: "3px" }}
                               />
-                              {segment.duration} m
+                             {formatDuration(segment.duration)} 
                             </span>
                             <span className="flightDetailSpantag"></span>
                             <span className="grey_rtbrder">|</span>{" "}
@@ -1077,7 +1086,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                         style={{ margin: "10px auto" }}
                       >
                         <div className="clr-drkgrey fnt-11 ng-binding">
-                          <span> ... </span> {segment.Duration} m{" "}
+                          <span> ... </span> {formatDuration(segment.duration)} {" "}
                           <span> ...</span>
                         </div>
                       </div>
@@ -1231,7 +1240,7 @@ const DepatureDetail = ({ srdvIdx, flight, type, flight2, flight3, types }) => {
                         style={{ margin: "10px auto" }}
                       >
                         <div className="clr-drkgrey fnt-11 ng-binding">
-                          <span> ... </span> {segment.Duration} m{" "}
+                          <span> ... </span> {formatDuration(segment.duration)} {" "}
                           <span> ...</span>
                         </div>
                       </div>

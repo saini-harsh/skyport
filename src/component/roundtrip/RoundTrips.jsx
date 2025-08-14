@@ -61,13 +61,13 @@ const flightClassDefaultValue = (flightCabinClass) => {
 };
 
 const sliderItems = [
-  { date: "Oct 03", price: "₹7845" },
-  { date: "Oct 04", price: "₹5954" },
-  { date: "Oct 05", price: "₹4155" },
-  { date: "Oct 06", price: "₹5953" },
-  { date: "Oct 07", price: "₹5495" },
-  { date: "Oct 08", price: "₹5953" },
-  { date: "Oct 09", price: "₹4155" },
+  { date: "Oct 03", price: "$7845" },
+  { date: "Oct 04", price: "$5954" },
+  { date: "Oct 05", price: "$4155" },
+  { date: "Oct 06", price: "$5953" },
+  { date: "Oct 07", price: "$5495" },
+  { date: "Oct 08", price: "$5953" },
+  { date: "Oct 09", price: "$4155" },
 ];
 
 const CalenderSliderContent = styled.div`
@@ -1389,7 +1389,7 @@ const RoundTrips = () => {
                       </li>{" "}
                       <li className="flight_price">
                         {" "}
-                        ₹ {Math.round(selectedFlight.Fare.PublishedFare)}
+                        $ {Math.round(selectedFlight.Fare.PublishedFare)}
                       </li>{" "}
                     </ul>
                   </div>
@@ -1464,7 +1464,7 @@ const RoundTrips = () => {
                     </li>{" "}
                     <li className="flight_price">
                       {" "}
-                      ₹ {Math.round(selectedFlight2.Fare.PublishedFare)}
+                      $ {Math.round(selectedFlight2.Fare.PublishedFare)}
                     </li>{" "}
                   </ul>
                 </div>
@@ -1480,7 +1480,7 @@ const RoundTrips = () => {
                       Grand Total{" "}
                       <span>
                         <span id="totalamount">
-                          ₹{" "}
+                          ${" "}
                           {Math.round(
                             selectedFlight.Fare.PublishedFare +
                               selectedFlight2.Fare.PublishedFare

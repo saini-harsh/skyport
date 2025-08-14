@@ -3190,6 +3190,11 @@
   display: none;
 }
 
-.filter_bar_flightList.visible {
+
+
+@media (max-width:767px) {
+  .filter_bar_flightList.visible {
   display: block;
+}
+
 }
