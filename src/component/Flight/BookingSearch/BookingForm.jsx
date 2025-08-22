@@ -584,7 +584,7 @@ const BookingForm = () => {
   const [cities2, setCities2] = useState([]);
   const [cities22, setCities22] = useState([]);
 
- const fetchDatas = async (value) => {
+  const fetchDatas = async (value) => {
     // fetch("https://admin.tripgoonline.com/api/airport")
     try {
       const requestData = {
@@ -919,7 +919,7 @@ const BookingForm = () => {
               data-cy="flightSW"
               className="fltWidgetSection appendBottom40 primaryTraveler "
             >
-              {/* <div className="searchtabslist">
+              <div className="searchtabslist">
                 <ul className=" search_tabs">
                   <li className="tab-link ">
                     <a className="current  flights">
@@ -946,7 +946,7 @@ const BookingForm = () => {
                     </a>
                   </li>
                 </ul>
-              </div> */}
+              </div>
 
               <div className="makeFlex hrtlCenter">
                 <div
@@ -1669,7 +1669,7 @@ const BookingForm = () => {
                   </div>
                 </div>
 
-                <div
+                {/* <div
                   className={`makeFlex hrtlCenter ${
                     showContent ? "" : "appendBottom10"
                   } flightFare`}
@@ -1746,7 +1746,7 @@ const BookingForm = () => {
                       ))}
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {showContent && (
                   <div style={{ paddingLeft: "10px", color: "#333" }}>
                     <RecentSearch cacheData={cacheData} />
