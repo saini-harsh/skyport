@@ -199,7 +199,7 @@ const Navbars = () => {
                       padding: "5px",
                     }}
                   >
-                    <AiOutlineUser size={35} color="#1d489f" />
+                    <AiOutlineUser size={35} color="#053355" />
                   </div>
                   {isAuth ? (
                     <div className="_logRt">
@@ -254,7 +254,7 @@ const Navbars = () => {
                   <Link>
                     <div className="_bxIcn">
                       <div className="_menuIcn">
-                        <IoTicketOutline color="#1d489f" size={25} />
+                        <IoTicketOutline color="#053355" size={25} />
                       </div>
                       <div className="_logRgt">
                         <div className="_hTxt"> My Booking</div>
@@ -275,7 +275,7 @@ const Navbars = () => {
                   <Link>
                     <div className="_bxIcn">
                       <div className="_menuIcn">
-                        <RiWallet3Line color="#1d489f" size={25} />
+                        <RiWallet3Line color="#053355" size={25} />
                       </div>
                       <div className="_logRgt">
                         <div className="_hTxt">SkyPort DestinationsWallet</div>

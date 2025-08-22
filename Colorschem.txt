@@ -1,2 +1,3 @@
 Primary: #053355
 Secondary: #f2bc06
+node --max-old-space-size=4096 node_modules/react-scripts/scripts/build.js

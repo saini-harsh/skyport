@@ -106,13 +106,13 @@ const ListProduct = ({ active }) => {
 
         {showNext && (
           <div className="custom-next3" onClick={handleSlideNext}>
-            <FaChevronRight color="#1d489f" className="fav_chevronnr" />
+            <FaChevronRight color="#053355" className="fav_chevronnr" />
           </div>
         )}
 
         {showPrev && (
           <div className="custom-prev3" onClick={handleSlidePrev}>
-            <FaChevronLeft color="#1d489f" className="fav_chevronnr" />
+            <FaChevronLeft color="#053355" className="fav_chevronnr" />
           </div>
         )}
       </section>

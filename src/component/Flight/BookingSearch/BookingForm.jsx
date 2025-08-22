@@ -1686,7 +1686,7 @@ const BookingForm = () => {
                     <a
                       className="active"
                       rel="noopener"
-                      style={{ color: "#1d489f" }}
+                      style={{ color: "#053355" }}
                       onClick={handleClick}
                     >
                       <IoIosArrowDropdownCircle size={20} /> You’ve Searched

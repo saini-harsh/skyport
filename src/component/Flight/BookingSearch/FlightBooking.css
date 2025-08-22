@@ -694,7 +694,7 @@
 }
 
 .CalendarMonth_caption {
-  background-color: #1d489f;
+  background-color: #053355;
 }
 
 .DayPicker strong {
@@ -725,13 +725,13 @@
 .CalendarDay__selected,
 .CalendarDay__selected:active,
 .CalendarDay__selected:hover {
-  background-color: #1d489f !important;
+  background-color: #053355 !important;
   color: white;
   border: 1px solid white !important;
 }
 
 .CalendarDay__selected_span {
-  background-color: #1d489f !important;
+  background-color: #053355 !important;
   color: white;
   border: 1px solid white !important;
 }
@@ -747,7 +747,7 @@
 }
 
 .DayPickerKeyboardShortcuts_show__bottomRight::before {
-  border-right: 33px solid #1d489f !important;
+  border-right: 33px solid #053355 !important;
 }
 
 .CalendarMonth_caption {

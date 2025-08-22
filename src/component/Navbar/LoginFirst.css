@@ -30,8 +30,8 @@
 }
 
 .btn-primary {
-  background: #1d489f;
-  border-color: #1d489f;
+  background: #053355;
+  border-color: #053355;
   padding: 13px 30px;
   font-size: 16px;
 }
@@ -86,7 +86,7 @@
 
 .inner_form_field .radio label {
   color: #191818;
-  border: 1px dashed #1d489f;
+  border: 1px dashed #053355;
   padding: 10px 31px;
   border-radius: 50px;
   display: block;
@@ -98,7 +98,7 @@
 
 .inner_form_field .radio label {
   color: #191818;
-  border: 1px dashed #1d489f;
+  border: 1px dashed #053355;
   padding: 10px 31px;
   border-radius: 50px;
   display: block;
@@ -110,9 +110,9 @@
 
 .travelagent .agent_form .input-group span.input-group-addon {
   border-radius: 50px 0px 0px 50px;
-  background: #1d489f;
+  background: #053355;
   color: #ffffff;
-  border-color: #1d489f;
+  border-color: #053355;
   padding: 15px 22px;
 }
 
@@ -127,10 +127,10 @@
 
 .travelagent .agent_form .input-group input {
   border-radius: 0px 50px 50px 0px !important;
-  border-color: #1d489f;
+  border-color: #053355;
   font-size: 14px;
   line-height: 18px;
-  color: #1d489f;
+  color: #053355;
   height: auto;
   padding: 15px 10px;
 }
@@ -172,7 +172,7 @@
 
 .travelagent .agent_form .form_btn input {
   color: #fff;
-  background: #1d489f;
+  background: #053355;
   font-size: 17px;
   line-height: 21px;
   font-weight: 600;
@@ -199,7 +199,7 @@
 }
 
 .travelagent .agent_form .cus_txt p a {
-  color: #1d489f;
+  color: #053355;
   text-decoration: none;
 }
 
@@ -259,19 +259,19 @@
 
 .travelagent .agent_form .input-group span.input-group-addon {
   border-radius: 5px 0px 0px 5px !important;
-  background: #1d489f;
+  background: #053355;
   color: #ffffff;
-  border-color: #1d489f;
+  border-color: #053355;
   padding: 10px 20px;
 }
 
 .travelagent .agent_form .input-group input {
   border-radius: 0px 5px 5px 0px  !important;
-  /* border-color: #1d489f; */
+  /* border-color: #053355; */
   border-color: rgb(221, 221, 221);
   font-size: 14px;
   line-height: 10px;
-  color: #1d489f;
+  color: #053355;
   /* height: auto; */
   padding: 0px 10px !important;
 }
@@ -283,7 +283,7 @@
 
 .travelagent .agent_form .form_btn .btn {
   color: #fff;
-  background: #1d489f;
+  background: #053355;
   font-size: 17px;
   line-height: 21px;
   font-weight: 600;

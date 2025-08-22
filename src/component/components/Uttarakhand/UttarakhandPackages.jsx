@@ -76,7 +76,7 @@ const UttarakhandPackages = ({handleContinueClick}) => {
                     <Col>
                       <div className="Uk-TrendingPackagesIcons">
                         <MdNoMeals
-                          style={{ fontSize: "20px", color: "#1d489f" }}
+                          style={{ fontSize: "20px", color: "#053355" }}
                         />
                         Meals
                       </div>
@@ -84,7 +84,7 @@ const UttarakhandPackages = ({handleContinueClick}) => {
                     <Col>
                       <div className="Uk-TrendingPackagesIcons">
                         <FaCarRear
-                          style={{ fontSize: "20px", color: "#1d489f" }}
+                          style={{ fontSize: "20px", color: "#053355" }}
                         />
                         transfer
                       </div>
@@ -92,7 +92,7 @@ const UttarakhandPackages = ({handleContinueClick}) => {
                     <Col>
                       <div className="Uk-TrendingPackagesIcons">
                         <FaMapLocation
-                          style={{ fontSize: "20px", color: "#1d489f" }}
+                          style={{ fontSize: "20px", color: "#053355" }}
                         />
                         Sightseeing
                       </div>
@@ -100,7 +100,7 @@ const UttarakhandPackages = ({handleContinueClick}) => {
                     <Col>
                       <div className="Uk-TrendingPackagesIcons">
                         <FaHotel
-                          style={{ fontSize: "20px", color: "#1d489f" }}
+                          style={{ fontSize: "20px", color: "#053355" }}
                         />
                         Hotel
                       </div>

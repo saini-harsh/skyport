@@ -30,7 +30,7 @@ const PopularInternationalSection = () => {
               {/* <span className="section-title__tagline">Destination lists</span> */}
               <span className="destinn">DESTINATION</span>
               <h2 className="section-title__title mt-0" style={{ color: "#000000" }}>
-                <span style={{ color: "#1d489f" }}>Popular</span> International
+                <span style={{ color: "#053355" }}>Popular</span> International
                 Destinations
               </h2>
               <div className="heading-ribbon">

@@ -417,12 +417,12 @@ const TopCities = () => {
                       <div className="d-flex flex-wrap gap-2">
                         <Link
                           to={datas.link}
-                          className="text-[#1d489f] text-decoration-none top_citires_forntt"
+                          className="text-[#053355] text-decoration-none top_citires_forntt"
                         >
                           {datas.destination}
                         </Link>
                         {i !== item.data.length - 1 && (
-                          <span className="text-[#1d489f]">•</span>
+                          <span className="text-[#053355]">•</span>
                         )}
                       </div>
                     ))}
@@ -462,12 +462,12 @@ const TopCities = () => {
                       <div className="d-flex flex-wrap gap-2">
                         <Link
                           to={datas.link}
-                          className="text-[#1d489f] text-decoration-none top_citires_forntt"
+                          className="text-[#053355] text-decoration-none top_citires_forntt"
                         >
                           {datas.destination}
                         </Link>
                         {i !== item.data.length - 1 && (
-                          <span className="text-[#1d489f]">•</span>
+                          <span className="text-[#053355]">•</span>
                         )}
                       </div>
                     ))}
@@ -494,19 +494,19 @@ const TopCities = () => {
         <div className="d-flex align-items-start gap-1 flex-wrap">
           <p className="text-muted mb-0">To:</p>
           <div className="d-flex flex-wrap gap-2">
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#1d489f] text-decoration-none">
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#053355] text-decoration-none">
               Goa
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#053355] text-decoration-none">
               Delhi
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#053355] text-decoration-none">
               Bangalore
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#053355] text-decoration-none">
               Ahmedabad
             </a>
           </div>
@@ -529,19 +529,19 @@ const TopCities = () => {
         <div className="d-flex align-items-start gap-1 flex-wrap">
           <p className="text-muted mb-0">To:</p>
           <div className="d-flex flex-wrap gap-2">
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#1d489f] text-decoration-none">
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#053355] text-decoration-none">
               Goa
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#053355] text-decoration-none">
               Delhi
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#053355] text-decoration-none">
               Bangalore
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#053355] text-decoration-none">
               Ahmedabad
             </a>
           </div>
@@ -563,19 +563,19 @@ const TopCities = () => {
         <div className="d-flex align-items-start gap-1 flex-wrap">
           <p className="text-muted mb-0">To:</p>
           <div className="d-flex flex-wrap gap-2">
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#1d489f] text-decoration-none">
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#053355] text-decoration-none">
               Goa
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#053355] text-decoration-none">
               Delhi
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#053355] text-decoration-none">
               Bangalore
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#053355] text-decoration-none">
               Ahmedabad
             </a>
           </div>
@@ -597,19 +597,19 @@ const TopCities = () => {
         <div className="d-flex align-items-start gap-1 flex-wrap">
           <p className="text-muted mb-0">To:</p>
           <div className="d-flex flex-wrap gap-2">
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#1d489f] text-decoration-none">
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#053355] text-decoration-none">
               Goa
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#053355] text-decoration-none">
               Delhi
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#053355] text-decoration-none">
               Bangalore
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#053355] text-decoration-none">
               Ahmedabad
             </a>
           </div>
@@ -631,19 +631,19 @@ const TopCities = () => {
         <div className="d-flex align-items-start gap-1 flex-wrap">
           <p className="text-muted mb-0">To:</p>
           <div className="d-flex flex-wrap gap-2">
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#1d489f] text-decoration-none">
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-goa-bom-goi" className="text-[#053355] text-decoration-none">
               Goa
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-new-delhi-bom-del" className="text-[#053355] text-decoration-none">
               Delhi
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-bengaluru-bom-blr" className="text-[#053355] text-decoration-none">
               Bangalore
             </a>
-            <span className="text-[#1d489f]">•</span>
-            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#1d489f] text-decoration-none">
+            <span className="text-[#053355]">•</span>
+            <a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd" className="text-[#053355] text-decoration-none">
               Ahmedabad
             </a>
           </div>

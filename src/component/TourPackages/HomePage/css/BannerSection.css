@@ -1254,7 +1254,7 @@ background: linear-gradient(90deg, rgba(247, 48, 48, 0.99) 0%, rgba(29, 72, 159,
 }
 
 .text-b {
-  color: #1d489f;
+  color: #053355;
 }
 
 .trending-tour-textbb {
@@ -1360,7 +1360,7 @@ background: linear-gradient(90deg, rgba(247, 48, 48, 0.99) 0%, rgba(29, 72, 159,
   padding: 10px 35px;
   border-radius: 50px;
   border: 2px solid transparent;
-  background-color: #1d489f;
+  background-color: #053355;
   text-align: center;
   width: 220px;
   margin: 0 auto;
@@ -1384,7 +1384,7 @@ background: linear-gradient(90deg, rgba(247, 48, 48, 0.99) 0%, rgba(29, 72, 159,
   padding: 8px 25px;
   border-radius: 50px;
   border: 2px solid transparent;
-  background-color: #1d489f;
+  background-color: #053355;
   text-align: center;
   text-decoration: none;
   transition: all 0.5s ease;
@@ -1402,11 +1402,11 @@ background: linear-gradient(90deg, rgba(247, 48, 48, 0.99) 0%, rgba(29, 72, 159,
 .tourBtn3 a{
   font-size: 18px;
   /* font-family: $pb; */
-  color: #1d489f;
+  color: #053355;
   text-transform: uppercase;
   padding: 10px 35px;
   border-radius: 50px;
-  border: 2px solid #1d489f;
+  border: 2px solid #053355;
   background-color: transparent;
   text-align: center;
   width: 220px;
@@ -1417,7 +1417,7 @@ background: linear-gradient(90deg, rgba(247, 48, 48, 0.99) 0%, rgba(29, 72, 159,
 }
 .tourBtn3 a:hover{
   color: #ffffff;
-  background-color: #1d489f;
+  background-color: #053355;
 }
 @media (max-width: 575.98px) {
   .tourBtn3 a {

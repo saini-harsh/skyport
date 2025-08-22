@@ -245,7 +245,7 @@
 
 .flight_tags span {
   font-size: 12px !important;
-  background: #1d489f;
+  background: #053355;
   color: #ffffff;
   top: -3px;
   left: 0px;
@@ -2699,7 +2699,7 @@ input[type="checkbox"]:checked ~ .box {
   .custom_tabs
   > .nav-item.active
   > a {
-  background: #1d489f;
+  background: #053355;
   color: #fff;
 }
 
@@ -4357,7 +4357,7 @@ label {
     width: calc(100% - 0px);
     border-radius: 10px 10px 0 0;
     display: flex;
-    background: #1d489f;
+    background: #053355;
     align-items: center;
   }
   .stick_filter_nv1_mobile .col_4 p {

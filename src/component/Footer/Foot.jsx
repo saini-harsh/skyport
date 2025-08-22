@@ -289,7 +289,7 @@ const Foot = () => {
                 >
                   {item.title} &nbsp;
                   {i !== footerLinks.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}
@@ -316,7 +316,7 @@ const Foot = () => {
                 >
                   {item.ori} {item.desti} flights{" "}
                   {i !== domestic.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}
@@ -343,7 +343,7 @@ const Foot = () => {
                 >
                   {item.ori} {item.desti} flights{" "}
                   {i !== international.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}
@@ -366,7 +366,7 @@ const Foot = () => {
                 <Link className="sc-1019823e-0 jTiBfs fs-12 lh-16 fw-500 maxContent c-neutral-700 link--hover">
                   {item.city} hotels{" "}
                   {i !== hotels.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}
@@ -389,7 +389,7 @@ const Foot = () => {
                 <Link className="sc-1019823e-0 jTiBfs fs-12 lh-16 fw-500 maxContent c-neutral-700 link--hover">
                   {item.title} tour packages{" "}
                   {i !== holidayPackages.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}
@@ -415,7 +415,7 @@ const Foot = () => {
                 >
                   {item.title} tour packages{" "}
                   {i !== internationalHolidayPackages.length - 1 && (
-                    <span className="text-[#1d489f]">|</span>
+                    <span className="text-[#053355]">|</span>
                   )}
                 </Link>
               ))}

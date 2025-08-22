@@ -204,7 +204,7 @@
   content: "";
   width: 44px;
   height: 6px;
-  background: #1d489f;
+  background: #053355;
   border-radius: 25px;
   display: block;
   margin-bottom: 8px;
@@ -227,7 +227,7 @@
 }
 .adlttl {
   font-size: 15px;
-  color: #1d489f;
+  color: #053355;
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -279,7 +279,7 @@
 }
 .edit_btn {
   font-size: 15px;
-  color: #1d489f;
+  color: #053355;
   margin-top: 20px;
 }
 

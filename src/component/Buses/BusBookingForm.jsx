@@ -437,7 +437,7 @@ const handleSearch = () => {
             >
               <div
                 className="overlay"
-                style={{ backgroundColor: "#1d489f36", opacity: "0.5" }}
+                style={{ backgroundColor: "#05335536", opacity: "0.5" }}
               ></div>
 
               <img

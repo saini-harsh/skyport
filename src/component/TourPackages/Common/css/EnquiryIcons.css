@@ -36,7 +36,7 @@
   .qrybx {
     padding: 0;
     width: 100%;
-    background: #1d489f;
+    background: #053355;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -144,12 +144,12 @@
     border-radius: 40px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(20deg, #f73030 20%, #1d489f);
+    background: linear-gradient(20deg, #f73030 20%, #053355);
   }
 
   #Button2,
   .sub_qu:hover {
-    background: linear-gradient(20deg, #1d489f 20%, #f73030);
+    background: linear-gradient(20deg, #053355 20%, #f73030);
   }
 
   .errorfrmmm {

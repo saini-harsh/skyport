@@ -1380,7 +1380,7 @@ const TicketBooking = () => {
               <Card.Body>
                 <Spinner
                   animation="border"
-                  variant="#1d489f"
+                  variant="#053355"
                   className="mb-3"
                 />
                 <Card.Text>Fetching Your Ticket Details..!!</Card.Text>
@@ -1749,7 +1749,7 @@ const TicketBooking = () => {
                 <Card.Body>
                   <Spinner
                     animation="border"
-                    variant="#1d489f"
+                    variant="#053355"
                     className="mb-3"
                   />
                   <Card.Text>Fetching Your Ticket Details..!!</Card.Text>

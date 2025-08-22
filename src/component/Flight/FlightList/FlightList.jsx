@@ -1370,7 +1370,7 @@ export const FlightList = () => {
                   <MdToggleOn
                     className="icon"
                     size={30}
-                    color="#1d489f"
+                    color="#053355"
                     onClick={() => handleCheckedstops("1-stop")}
                   />
                 ) : (
