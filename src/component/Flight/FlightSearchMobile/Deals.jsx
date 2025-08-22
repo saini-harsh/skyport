@@ -116,14 +116,14 @@ const Deals = () => {
      <Container>
      <Row style={{ padding: "30px 0px 15px 0px" }}>
         <Col>
-          <h4 style={{ fontWeight: "700" }}>DAILY DEALS</h4>
+          <h4 style={{ fontWeight: "700" }}>Offers - Daily Deals</h4>
           <div className="from_to_TG_to">
-            <IoLocationSharp size={20} color="#1d489f" />
+            <IoLocationSharp size={20} color="#053355" />
             From / Mumbai
           </div>
         </Col>
         <Col style={{ textAlign: "end" }}>
-          <h6 style={{ fontWeight: "600", color: "#1d489f" }}>Closed At</h6>
+          <h6 style={{ fontWeight: "600", color: "#053355" }}>Closed At</h6>
           <h4 style={{ fontWeight: "700", color: "#f73131" }}>{timeLeft}</h4>
         </Col>
       </Row>

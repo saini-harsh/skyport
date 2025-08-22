@@ -21,7 +21,7 @@
   padding: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
-  /* border: 1px solid #1d489f;
+  /* border: 1px solid #053355;
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
@@ -50,7 +50,7 @@
   width: 100%;
   border-radius: 5px;
   margin-top: 5px;
-  border: 1px solid #1d489f;
+  border: 1px solid #053355;
 }
 
 /* 
@@ -65,7 +65,7 @@
 
 .flightSearchFormBtn {
   width: 100%;
-  background-color: #1d489f;
+  background-color: #053355;
   color: white;
   /* padding: 10px 5px; */
   padding: 5px 10px;
@@ -86,7 +86,7 @@
 
 .flightSearchFilter2 {
   margin-top: 25px;
-  color: #1d489f;
+  color: #053355;
 }
 
 .flightTable {
@@ -236,7 +236,7 @@
     position: fixed;
     bottom: 10px;
     left: 170px;
-    /* background-color: #1d489f; */
+    /* background-color: #053355; */
     color: #fff;
     /* width: 40px; */
     /* height: 40px; */
@@ -621,7 +621,7 @@
   /* width: 15px; */
   height: 15px;
   /* margin-top: 26px !important; */
-  color: #1d489f !important;
+  color: #053355 !important;
 }
 
 .priceDetails > div > p {
@@ -645,7 +645,7 @@
   /* margin-left: 80px; */
   /* margin-top: 30px; */
   /*   background: #053355 ; */
-  /* background-color: #1d489f; */
+  /* background-color: #053355; */
   /* background-color: #051b51; */
   background: #053355 ;
   border-radius: 3px;
@@ -748,7 +748,7 @@
 } */
 
 .calenderData > p {
-  color: #1d489f;
+  color: #053355;
   /* line-height: 0cm; */
   margin-top: 8px;
   font-size: 14px;
@@ -895,7 +895,7 @@
     /* margin-left: 80px; */
     /* margin-top: 30px; */
     /* text-align: end; */
-    background-color: #1d489f;
+    background-color: #053355;
   }
 
   .durationDetails {
@@ -1040,7 +1040,7 @@
 
 .morefarediv ._bgcls {
   background: #edeeff;
-  border: 1px solid #1d489f;
+  border: 1px solid #053355;
   border-radius: 8px;
   padding: 5px;
   margin-bottom: 6px;
@@ -1086,16 +1086,16 @@
   font-size: 13px;
   border-radius: 5px;
   display: none;
-  color: #1d489f;
+  color: #053355;
   border-radius: 6px;
-  border: 1px solid #1d489f;
+  border: 1px solid #053355;
   line-height: 21px;
   margin-left: auto;
   cursor: pointer;
 }
 
 .morefarediv .dwnarrowfl {
-  border: solid #1d489f;
+  border: solid #053355;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 4px;
@@ -1141,7 +1141,7 @@
 }
 
 .morefarediv .actve {
-  border: 1px solid #1d489f !important;
+  border: 1px solid #053355 !important;
   background: #f8fbfd;
 }
 
@@ -1169,7 +1169,7 @@
 .morefarediv .optn_head span {
   font-size: 15px;
   font-weight: 600;
-  color: #1d489f;
+  color: #053355;
   text-transform: uppercase;
 }
 
@@ -1262,7 +1262,7 @@
 
 .morefarediv .conta-radio input:checked ~ .checkk-radio {
   background-color: #ffffff;
-  border: 1px solid #1d489f;
+  border: 1px solid #053355;
 }
 
 .morefarediv .checkk-radio:after {
@@ -1277,7 +1277,7 @@
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  background: #1d489f;
+  background: #053355;
 }
 
 .morefarediv .conta-radio input:checked ~ .checkk-radio:after {
@@ -1352,7 +1352,7 @@
   display: block;
   padding: 7px;
   border-radius: 25px;
-  background: #1d489f;
+  background: #053355;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -1395,7 +1395,7 @@
 .morefarediv .f30 {
   font-size: 28px;
   font-weight: 600;
-  color: #1d489f;
+  color: #053355;
 }
 
 .morefarediv .marg-left {
@@ -1403,7 +1403,7 @@
 }
 
 .morefarediv .book-bt-nwap {
-  background-color: #1d489f;
+  background-color: #053355;
   text-shadow: none;
   color: #fff;
   outline: none;
@@ -1716,7 +1716,7 @@
 .deal .deal-tag {
   width: 40px;
   height: 20px;
-  background: #1d489f;
+  background: #053355;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }

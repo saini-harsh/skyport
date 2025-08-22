@@ -1518,7 +1518,7 @@ const HotelSearchNew = () => {
                       _ngcontent-serverapp-c8=""
                       className="active"
                       rel="noopener"
-                      style={{ color: "#1d489f" }}
+                      style={{ color: "#053355" }}
                     >
                       <IoIosArrowDropdownCircle size={20} /> You’ve Searched{" "}
                     </a>

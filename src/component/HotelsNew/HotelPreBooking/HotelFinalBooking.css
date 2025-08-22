@@ -110,7 +110,7 @@
 .hotelFinalBooking_checkIn h3,
 .hotelFinalBooking_checkOut h3 {
   font-size: 20px;
-  color: #1d489f;
+  color: #053355;
   margin: 4px 0;
 }
 
@@ -186,7 +186,7 @@
 }
 .hotelFinalBooking_continueBtn {
   align-items: end;
-  background: linear-gradient(20deg, #f73030 20%, #1d489f);
+  background: linear-gradient(20deg, #f73030 20%, #053355);
   border: none !important;
   border-radius: 5px;
   color: #fff;
@@ -330,7 +330,7 @@
   justify-content: flex-start;
 }
 .hotelFinalBooking_Main .hotelFinalBooking_guestRooms {
-  color: #1d489f;
+  color: #053355;
   padding-top: 10px;
   border-bottom: 3px solid red;
 }

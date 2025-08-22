@@ -179,7 +179,7 @@
 }
 
 .inRound .book_flight .fli_price {
-  color: #1d489f;
+  color: #053355;
   display: block;
   font-weight: 600;
 }
@@ -813,7 +813,7 @@
 .ontyp {
   font-size: 12px;
   font-weight: 600;
-  color: #1d489f;
+  color: #053355;
 }
 .air-name {
   font-size: 12px;
@@ -1169,7 +1169,7 @@
 }
 .rtintfre {
   font-size: 20px;
-  color: #1d489f;
+  color: #053355;
   line-height: 0.75em;
   font-weight: 600;
 }

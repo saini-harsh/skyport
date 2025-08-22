@@ -148,7 +148,7 @@
   /* border-radius: 10px !important;  */
 }
 .tourPackageFormDiv {
-  background-color: #1d489f;
+  background-color: #053355;
   padding: 15px;
   text-align: center;
   border-radius: 20px 20px 0px 4px !important;
@@ -243,8 +243,8 @@
 }
 .tourPackageFormQuerybtn {
   width: 100%;
-  /* background-color: #1d489f; */
-  background: linear-gradient(20deg, #f73030 20%, #1d489f);
+  /* background-color: #053355; */
+  background: linear-gradient(20deg, #f73030 20%, #053355);
   color: #fff;
   border: none;
   padding: 8px;
@@ -580,7 +580,7 @@
   .newBottomStrip .btnsec {
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(20deg, #f73030 20%, #1d489f);
+    background: linear-gradient(20deg, #f73030 20%, #053355);
     width: 45%;
     margin-right: 5%;
     justify-content: center;

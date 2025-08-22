@@ -26,7 +26,7 @@ const FlightDeals = () => {
       
       <Container className="deal-section dealSection">
         <h2 className="blueHead dealHeading">
-          Cheap International Flight Deals*
+          Popular Flight Routes
         </h2>
 
         {/* Tabs */}

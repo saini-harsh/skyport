@@ -99,7 +99,7 @@
   padding: 8px 40px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1d489f;
+  background-color: #053355;
   border: none;
   color: white;
   border-radius: 20px;
@@ -153,7 +153,7 @@
 .uttarakhand-Safe_Travel {
   width: 100px;
   height: 100px;
-  background: #1d489f;
+  background: #053355;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -193,7 +193,7 @@
 .uttarakhand-formGroup input:focus {
   outline: none;
   background: #e0e0e0;
-  box-shadow: 0 0 0 2px #1d489f;
+  box-shadow: 0 0 0 2px #053355;
 }
 .uttarakhand-formDisclaimer a {
   color: #f73030;

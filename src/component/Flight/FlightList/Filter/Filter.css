@@ -107,8 +107,8 @@
   }
   .mobile .flt-itm.actvfltb {
     background: #f1f9ff;
-    border-color: #1d489f;
-    color: #1d489f;
+    border-color: #053355;
+    color: #053355;
   }
   .mobile .flt-itm.actvfltb img {
     filter: brightness(0) saturate(100%) invert(50%) sepia(83%) saturate(2275%)
@@ -146,8 +146,8 @@
   }
   .mobile .flt-itm.actvfltb {
     background: #f1f9ff;
-    border-color: #1d489f;
-    color: #1d489f;
+    border-color: #053355;
+    color: #053355;
   }
   .mobile .flt-itm.actvfltb img {
     filter: brightness(0) saturate(100%) invert(50%) sepia(83%) saturate(2275%)
@@ -190,12 +190,12 @@
   }
   .mobile .srtbl {
     font-size: 11px;
-    color: #1d489f;
+    color: #053355;
   }
   .mobile .clckd {
     background: #ebf6ff;
-    color: #1d489f;
-    border-color: #1d489f;
+    color: #053355;
+    border-color: #053355;
   }
   .mobile .sort-pop .clckd img {
     filter: invert(48%) sepia(79%) saturate(1265%) hue-rotate(179deg)
@@ -209,7 +209,7 @@
     height: 3px;
     width: 30px;
     border-radius: 4px;
-    background: #1d489f;
+    background: #053355;
   }
   .mobile .flter {
     padding: 20px 0 14px;
@@ -220,7 +220,7 @@
     font-weight: 600;
   }
   .mobile .flter small {
-    color: #1d489f;
+    color: #053355;
     font-size: 13px;
   }
   .mobile .pd-title {
@@ -306,7 +306,7 @@
   }
   .mobile .pn-mr {
     font-size: 13px;
-    color: #1d489f;
+    color: #053355;
     font-weight: 600;
   }
   .mobile .apl-btn {
@@ -435,10 +435,10 @@
   .mobile .add-pck {
     padding: 10px;
     width: 100%;
-    border: 1px solid #1d489f;
+    border: 1px solid #053355;
     border-radius: 6px;
     background: #f2f9ff;
-    color: #1d489f;
+    color: #053355;
     font-size: 14px;
     margin-bottom: 15px;
     text-align: center;
@@ -505,10 +505,10 @@
   .mobile .rmv-btn {
     background: #f2f9ff;
     border-radius: 6px;
-    border: 1px solid #1d489f;
+    border: 1px solid #053355;
     padding: 10px 20px;
     font-size: 13px;
-    color: #1d489f;
+    color: #053355;
     font-weight: 500;
     text-align: center;
   }
@@ -556,7 +556,7 @@
     text-decoration: none;
   }
   .mobile .dtlbx .tab a.active {
-    border-bottom: 3px solid #1d489f;
+    border-bottom: 3px solid #053355;
     z-index: 9;
     color: #000;
   }
@@ -771,7 +771,7 @@
     border-radius: 0 0 15px 15px;
   }
   .mobile .chsemi {
-    color: #1d489f;
+    color: #053355;
     font-size: 11px;
     cursor: pointer;
     text-decoration: none;
@@ -1105,11 +1105,11 @@
   }
   .mobile .currradio:hover input ~ .curr-chekmark {
     background-color: #ffffff;
-    border: 1px solid #1d489f;
+    border: 1px solid #053355;
   }
   .mobile .currradio input:checked ~ .curr-chekmark {
     background-color: #ffffff;
-    border: 1px solid #1d489f;
+    border: 1px solid #053355;
   }
   .mobile .curr-chekmark:after {
     content: "";
@@ -1125,12 +1125,12 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #1d489f;
+    background: #053355;
   }
   .mobile .bluerbg {
     width: 45px;
     height: 45px;
-    background: #1d489f;
+    background: #053355;
     border-radius: 50%;
     text-align: center;
     color: #fff;
@@ -1145,10 +1145,10 @@
     color: #929292;
   }
   .mobile input:checked + .slider {
-    background-color: #1d489f;
+    background-color: #053355;
   }
   .mobile input:focus + .slider {
-    box-shadow: 0 0 1px #1d489f;
+    box-shadow: 0 0 1px #053355;
   }
   .mobile input:checked + .slider:before {
     transform: translateX(20px);
@@ -1169,7 +1169,7 @@
     z-index: 1;
   }
   .mobile .clrbluetxt {
-    color: #1d489f;
+    color: #053355;
     font-size: 14px;
     font-weight: 600;
   }

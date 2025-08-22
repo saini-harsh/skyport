@@ -394,7 +394,7 @@ const HotelSearchNew = () => {
     {
       backgroundImage:
         "https://www.harbourhotels.co.uk/media/d4ipp450/1c57cb2a162815dd23ef3db35d0e8521.jpg",
-      overlayColor: "#1d489f36",
+      overlayColor: "#05335536",
       imgMark: "/Images/dream-feather-bg.png",
       title: "Search Hotels",
       subtitle: "Smooth Hotel Booking, Unbeatable Low Prices",

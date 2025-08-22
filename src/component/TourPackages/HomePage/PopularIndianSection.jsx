@@ -64,7 +64,7 @@ const PopularIndianSection = ({ sheading, fheading, secheading }) => {
           <div className="section-title1">
             <span className="destinn">{sheading}</span>
             <h2 style={{ color: "#000000" }}>
-              <span style={{ color: "#1d489f" }}>{fheading}</span> {secheading}
+              <span style={{ color: "#053355" }}>{fheading}</span> {secheading}
             </h2>
             <div className="heading-ribbon">
               <svg

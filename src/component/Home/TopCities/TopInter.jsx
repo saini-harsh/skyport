@@ -257,12 +257,12 @@ const TopInter = () => {
                         <>
                           <Link
                             to={datas.link}
-                            className="text-[#1d489f] text-decoration-none"
+                            className="text-[#053355] text-decoration-none"
                           >
                             {datas.destination}
                           </Link>
                           {i !== item.data.length - 1 && (
-                            <span className="text-[#1d489f]">•</span>
+                            <span className="text-[#053355]">•</span>
                           )}
                         </>
                       ))}

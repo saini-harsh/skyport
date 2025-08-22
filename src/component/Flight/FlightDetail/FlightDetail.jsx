@@ -962,7 +962,7 @@ const FlightDetail = () => {
           email: "support@tripgoonline.com",
           contact: "+91 92112 52356",
         },
-        theme: { color: "#1d489f" },
+        theme: { color: "#053355" },
       };
 
       const rzp = new window.Razorpay(options);
@@ -2557,7 +2557,7 @@ const FlightDetail = () => {
                   <Card.Body>
                     <Spinner
                       animation="border"
-                      variant="#1d489f"
+                      variant="#053355"
                       className="mb-3"
                     />
                     <Card.Text>

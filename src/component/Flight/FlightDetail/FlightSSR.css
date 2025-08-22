@@ -16,8 +16,8 @@
 }
 
 .tab-button.active {
-  border-bottom: 3px solid #1d489f;
-  color: #1d489f;
+  border-bottom: 3px solid #053355;
+  color: #053355;
 }
 
 /* --------------------------------------------------------------- */
@@ -660,7 +660,7 @@
 }
 
 .ssr_active_head.active {
-  border-bottom: 1px solid #1d489f;
-  color: #1d489f;
+  border-bottom: 1px solid #053355;
+  color: #053355;
   font-weight: 700;
 }

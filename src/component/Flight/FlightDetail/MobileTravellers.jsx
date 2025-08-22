@@ -762,7 +762,7 @@ const MobileTravellers = ({
                         className="fr edit_info"
                         onClick={() => handleEdit("Adult", index)}
                       >
-                        <HiMiniPencilSquare size={25} color="#1d489f" />
+                        <HiMiniPencilSquare size={25} color="#053355" />
                       </a>
                     </li>
                   ))}
@@ -779,7 +779,7 @@ const MobileTravellers = ({
                         className="fr edit_info"
                         onClick={() => handleEdit("Child", index)}
                       >
-                        <HiMiniPencilSquare size={25} color="#1d489f" />
+                        <HiMiniPencilSquare size={25} color="#053355" />
                       </a>
                     </li>
                   ))}
@@ -796,7 +796,7 @@ const MobileTravellers = ({
                         className="fr edit_info"
                         onClick={() => handleEdit("Infant", index)}
                       >
-                        <HiMiniPencilSquare size={25} color="#1d489f" />
+                        <HiMiniPencilSquare size={25} color="#053355" />
                       </a>
                     </li>
                   ))}
