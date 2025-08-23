@@ -26,7 +26,7 @@ const FlightDeals = () => {
       
       <Container className="deal-section dealSection">
         <h2 className="blueHead dealHeading">
-          Popular Flight Routes
+          Cheap International Flight Deals
         </h2>
 
         {/* Tabs */}
@@ -60,7 +60,7 @@ const FlightDeals = () => {
                   <td valign="top" className="cell-0">
                     {/* San Francisco → Vancouver */}
                     <div className="deal-box">
-                      <Link  className="text-decoration-none">
+<Link to={getOneWayUrl("YVR", "SFO")} className="text-decoration-none">
                         <figure>
                           <img src="//c.fareportal.com/gcms/portals/2/images/destinations/YVR-r2x.jpg" alt="YVR" />
                         </figure>
@@ -84,7 +84,7 @@ const FlightDeals = () => {
                           <td className="cell1-1">
                             {/* Los Angeles → Vancouver */}
                             <div className="deal-box">
-                              <Link  className="text-decoration-none">
+<Link to={getOneWayUrl("YVR", "LAX")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-1-r2x.jpg" alt="YVR" />
                                 </figure>
@@ -104,7 +104,7 @@ const FlightDeals = () => {
                           <td className="cell1-2">
                             {/* Chicago → Toronto */}
                             <div className="deal-box">
-                              <Link  className="text-decoration-none">
+<Link to={getOneWayUrl("YTO", "ORD")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/images/destinations/YTO-r2x.jpg" alt="YTO" />
                                 </figure>
@@ -127,7 +127,7 @@ const FlightDeals = () => {
                             {/* Los Angeles → Toronto */}
                             {/* to={getOneWayUrl("YTO", "LAX")} */}
                             <div className="deal-box">
-                              <Link  className="text-decoration-none">
+<Link to={getOneWayUrl("YTO", "LAX")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-3-r2x.jpg" alt="YTO" />
                                 </figure>
@@ -147,7 +147,7 @@ const FlightDeals = () => {
                           <td className="cell1-4">
                             {/* Los Angeles → Calgary */}
                             <div className="deal-box">
-                              <Link  className="text-decoration-none">
+<Link to={getOneWayUrl("YYC", "LAX")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/images/destinations/YYC-r2x.jpg" alt="YYC" />
                                 </figure>
@@ -182,7 +182,7 @@ const FlightDeals = () => {
                   <td valign="top" className="cell-0">
                     {/* San Francisco ⇌ Vancouver */}
                     <div className="deal-box">
-                      <Link className="text-decoration-none">
+<Link to={getRoundTripUrl("YVR", "SFO")} className="text-decoration-none">
                         <figure>
                           <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-0-r2x.jpg" alt="YVR" />
                         </figure>
@@ -206,7 +206,7 @@ const FlightDeals = () => {
                           <td className="cell1-1">
                             {/* Chicago ⇌ Toronto */}
                             <div className="deal-box">
-                              <Link className="text-decoration-none">
+<Link to={getRoundTripUrl("YTO", "ORD")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-1-r2x.jpg" alt="YTO" />
                                 </figure>
@@ -226,7 +226,7 @@ const FlightDeals = () => {
                           <td className="cell1-2">
                             {/* Atlanta ⇌ Calgary */}
                             <div className="deal-box">
-                              <Link className="text-decoration-none">
+<Link to={getRoundTripUrl("YYC", "ATL")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-2-r2x.jpg" alt="YYC" />
                                 </figure>
@@ -248,7 +248,7 @@ const FlightDeals = () => {
                           <td className="cell1-3">
                             {/* San Francisco ⇌ Calgary */}
                             <div className="deal-box">
-                              <Link className="text-decoration-none">
+<Link to={getRoundTripUrl("YYC", "SFO")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-3-r2x.jpg" alt="YYC" />
                                 </figure>
@@ -268,7 +268,7 @@ const FlightDeals = () => {
                           <td className="cell1-4">
                             {/* Los Angeles ⇌ Toronto */}
                             <div className="deal-box">
-                              <Link className="text-decoration-none">
+<Link to={getRoundTripUrl("YTO", "LAX")} className="text-decoration-none">
                                 <figure>
                                   <img src="//c.fareportal.com/gcms/portals/2/Images/destinations/Generic-4-r2x.jpg" alt="YTO" />
                                 </figure>

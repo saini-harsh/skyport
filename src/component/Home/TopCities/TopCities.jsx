@@ -161,7 +161,7 @@ const TopCities = () => {
           <div className="_hdrtxt">
            
             <div className="top_cities_flight_serach">
-              Inter-Caribbean destinations
+              Trips of a Lifetime Guide
             </div>
           
           </div>
@@ -196,7 +196,7 @@ const TopCities = () => {
                       {item.data.map((datas, i) => (
                         <>
                           <Link
-                            // to={datas.link}
+                            to={datas.link}
                             className="text-[#053355] text-decoration-none"
                           >
                             {datas.destination}

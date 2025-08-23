@@ -187,7 +187,7 @@ const socialIcons = [
     label: "Facebook",
     link: "https://www.facebook.com/share/16vgLnkcFf/",
   },
-  { icon: "fab fa-x-twitter", label: "Twitter", link: "#" },
+  { icon: "fab fa-tiktok", label: "Tiktok", link: "#" },
   {
     icon: "fab fa-instagram",
     label: "Instagram",

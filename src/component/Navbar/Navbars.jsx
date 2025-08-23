@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
@@ -16,7 +16,7 @@ import {
   FaPlane,
   FaChevronDown,
 } from "react-icons/fa";
-import { IoMdGlobe, IoMdNotificationsOutline } from "react-icons/io";
+import { IoMdGlobe, IoMdLogIn, IoMdNotificationsOutline } from "react-icons/io";
 import {
   MdChatBubbleOutline,
   MdEmail,
@@ -147,6 +147,50 @@ const Navbars = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const sidebarRef = useRef(null);
+const [isClosing, setIsClosing] = useState(false);
+
+  // const handleAccountClick = () => {
+  //   setIsSidebarOpen(true);
+
+  //   // For WebView communication (optional)
+  //   if (window.ReactNativeWebView) {
+  //     window.ReactNativeWebView.postMessage("openSidebar");
+  //   }
+  // };
+
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setIsSidebarOpen(false);
+    }
+  };
+  const handleAccountClick = () => {
+  setIsSidebarOpen(true);
+  setIsClosing(false);
+};
+
+const handleCloseSidebar = () => {
+  setIsClosing(true);
+  setTimeout(() => {
+    setIsSidebarOpen(false);
+  }, 300); // Must match the CSS transition time
+};
+
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSidebarOpen]);
+
   return (
     <div className="main-nav">
       <div
@@ -228,7 +272,8 @@ const Navbars = () => {
                     alignItems: "center",
                   }}
                 >
-                  <div className="inner_account_nav" onClick={handleMyAccount}>
+                  <div className="inner_account_nav" onClick={handleMyAccount}
+                  >
                     <div className="inner_acc">
                       <FaRegUser color="#fff" size={20} />
                     </div>
@@ -443,13 +488,13 @@ const Navbars = () => {
               </NavDropdown>  */}
 
               <div className="nav-item moreTravel">
-                <button className="more-travel-btn">
+                <button className="more-travel-btn"  onClick={handleAccountClick} type="button">
                   <span>More Travel</span>
                   <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
                     <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
                   </svg>
                 </button>
-                <div className="option-list ">
+                {/* <div className="option-list ">
                   <ul className="first-menu">
                     <li>
                       <Link className="item-link " to="/">
@@ -459,13 +504,7 @@ const Navbars = () => {
                             alt=""
                             style={{ height: "32px", width: "32px" }}
                           />
-                          {/* <svg
-                            viewBox="0 0 20 20"
-                            className="sv svg-1-25 text-gray-700  "
-                            aria-hidden="true"
-                          >
-                            <use className="sv-icon" xlinkHref="#flights_v2" />
-                          </svg> */}
+                        
                           Flights
                         </div>
                       </Link>
@@ -478,13 +517,7 @@ const Navbars = () => {
                             alt=""
                             style={{ height: "32px", width: "32px" }}
                           />
-                          {/* <svg
-                            viewBox="0 0 20 20"
-                            className="sv svg-1-25 text-gray-700  "
-                            aria-hidden="true"
-                          >
-                            <use className="sv-icon" xlinkHref="#hotels_v2" />
-                          </svg> */}
+                         
                           Hotels
                         </div>
                       </Link>
@@ -498,19 +531,13 @@ const Navbars = () => {
                             alt=""
                             style={{ height: "32px", width: "32px" }}
                           />
-                          {/* <svg
-                            viewBox="0 0 20 20"
-                            className="sv svg-1-25 text-gray-700  "
-                            aria-hidden="true"
-                          >
-                            <use className="sv-icon" xlinkHref="#car_v2" />
-                          </svg> */}
+                         
                           Tour Packages
                         </div>
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
 
               {/* <Nav.Link
@@ -796,7 +823,7 @@ const Navbars = () => {
             </div> */}
 
             <div className="header-right-sec">
-              <Link
+              {/* <Link
                 href="tel:+592 615 8808"
                 role="button"
                 className="utility__phone utility__phone-number is-active inner"
@@ -846,51 +873,167 @@ const Navbars = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
-              {/* <div className="nav-item currency-menu d-none d-md-block">
-                <button
-                  className=" navigation-link-new currency-btn css-1ujsas3"
-                  type="button"
-                  id="currency-button"
+              </Link> */}
+             
+              <div className="nav-item helpMenu">
+                {/* <Link className="navigation-link-new" type="link" to="/contact">
+                  Support
+                </Link> */}
+                  <Nav
+                className="ml-auto support_link"
+                onMouseLeave={handleMouseLeave}
+              >
+                <NavDropdown
+                  title={
+                    <span  className="navigation-link-new" style={{ display: "flex", alignItems: "center" ,color:'#fff'}}>
+                      {/* <img
+                        src="/Images/Icons/supportss.png"
+                        alt="Support"
+                        style={{
+                          height: "28px",
+                          width: "28px",
+                          marginRight: "8px",
+                        }}
+                      /> */}
+                      Support
+                    </span>
+                  }
+                  id="navbarDropdown"
+                  className="no-border support_link"
+                  style={{ padding: "0px" }}
+                  show={showDropdown}
+                  onMouseEnter={handleMouseEnter}
                 >
-                  <span className="flag flag-USD" /> <span>USD $ / EN </span>
-                  <span className="css-1n4a93h">
+                  <NavDropdown.Item>
+                    <div className="cus_icon">
+                      <FaUserCircle className="icon" />
+                    </div>
+                    <div className="cus_txt">
+                      <span className="title">Account Manager</span>
+                      <span className="sub_txt">
+                        592-671-8606 <br /> explore@skyportdestinations.com
+                      </span>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <div className="cus_icon">
+                      <IoMdGlobe className="icon" />
+                    </div>
+                    <div className="cus_txt">
+                      <span className="title">Customer Support</span>
+                      <span className="sub_txt">
+                       explore@skyportdestinations.com
+                        <br /> 592-671-8606
+                      </span>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <div className="cus_icon whatsapp_icon">
+                      <MdWhatsapp className="icon" />
+                    </div>
+                    <div className="cus_txt">
+                      <span className="title" style={{ marginTop: "6px" }}>
+                        592-671-8606
+                      </span>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => setShowDropdown(false)}>
+                    <div className="cus_icon">
+                      <FaEnvelope className="icon" />
+                    </div>
+                    <div className="cus_txt">
+                      <span className="title">For Booking</span>
+                      <span className="sub_txt">
+                        <Link
+                          className="mail_link"
+                          to="mailto:support@tripgoonline.com"
+                        >
+                        explore@skyportdestinations.com
+                        </Link>
+                      </span>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => setShowDropdown(false)}>
+                    <div className="cus_icon">
+                      <FaEnvelope className="icon" />
+                    </div>
+                    <div className="cus_txt">
+                      <span className="title">For Refund</span>
+                      <span className="sub_txt">
+                        <Link
+                          className="mail_link"
+                          to="mailto:support@tripgoonline.com"
+                        >
+                        explore@skyportdestinations.com
+                        </Link>
+                      </span>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+              </div>
+                <button className="btn-signin css-79xub" type="button">
+                  <span className="icon_grey">
                     <svg
-                      className="css-vubbuv"
-                      focusable="false"
+                      viewBox="0 0 18 18"
+                      className="sv svg-1-25 text-gray-700  "
                       aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      data-testid="ExpandMoreIcon"
                     >
-                      <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                      <use className="sv-icon" xlinkHref="#sv_user_new_grey" />
                     </svg>
                   </span>
-                  <span className="css-w0pj6f" />
+                  <span className="icon_blue">
+                    <IoPersonCircleOutline size={23} color="#000" />
+                  </span>
+                  <span className="text" style={{ color: "#000" }}>
+                    My Account
+                    {/* Sign In <span className="seprator-slash">/</span> Sign Out */}
+                  </span>
+                  <span className=" css-w0pj6f" />
+
+
+
+                    <div className="option-list ">
+                  <ul className="first-menu">
+                    <li>
+                      <Link className="item-link " to="/">
+                        <div className="left-sec">
+                          {/* <img
+                            src="https://cdn-icons-png.freepik.com/512/15804/15804019.png"
+                            alt=""
+                            style={{ height: "32px", width: "32px" }}
+                          /> */}
+                        <IoMdLogIn color="#fff"/>
+                          Login
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="item-link " to="/hotel">
+                        <div className="left-sec">
+                              <IoMdLogIn color="#fff"/>
+                         
+                          Register
+                        </div>
+                      </Link>
+                    </li>
+                    {/* <li>
+                      <Link className="item-link " to="/tour">
+                        <div className="left-sec">
+                          <img
+                            src="https://cdn-icons-png.freepik.com/512/712/712067.png?ga=GA1.1.1727314930.1755079763"
+                            // src="https://cdn-icons-png.freepik.com/512/6381/6381883.png"
+                            alt=""
+                            style={{ height: "32px", width: "32px" }}
+                          />
+                         
+                          Tour Packages
+                        </div>
+                      </Link>
+                    </li> */}
+                  </ul>
+                </div>
                 </button>
-              </div> */}
-              <div className="nav-item helpMenu">
-                <Link className="navigation-link-new" type="link" to="/contact">
-                  Support
-                </Link>
-              </div>
-              <button className="btn-signin css-79xub" type="button">
-                <span className="icon_grey">
-                  <svg
-                    viewBox="0 0 18 18"
-                    className="sv svg-1-25 text-gray-700  "
-                    aria-hidden="true"
-                  >
-                    <use className="sv-icon" xlinkHref="#sv_user_new_grey" />
-                  </svg>
-                </span>
-                <span className="icon_blue">
-                  <IoPersonCircleOutline size={23} color="#000" />
-                </span>
-                <span className="text" style={{ color: "#000" }}>
-                  Sign In <span className="seprator-slash">/</span> Sign Out
-                </span>
-                <span className=" css-w0pj6f" />
-              </button>
             </div>
           </Navbar.Collapse>
           <Navbar.Brand as={Link} to="/">
@@ -953,6 +1096,56 @@ const Navbars = () => {
         otpSent={otpSent}
         setOtpSent={setOtpSent}
       />
+      {isSidebarOpen && (
+  <div
+    className={`sidebar option-list ${isClosing ? "close" : "open"}`}
+    ref={sidebarRef}
+  >
+    <button className="close-btn" onClick={handleCloseSidebar}>
+      ×
+    </button>
+
+    <ul className="first-menu">
+      <li onClick={handleCloseSidebar}>
+        <Link className="item-link" to="/">
+          <div className="left-sec">
+            <img
+              src="https://cdn-icons-png.freepik.com/512/15804/15804019.png"
+              alt=""
+              style={{ height: "32px", width: "32px" }}
+            />
+            Flights
+          </div>
+        </Link>
+      </li>
+      <li onClick={handleCloseSidebar}>
+        <Link className="item-link" to="/hotel">
+          <div className="left-sec">
+            <img
+              src="https://cdn-icons-png.freepik.com/512/1475/1475996.png"
+              alt=""
+              style={{ height: "32px", width: "32px" }}
+            />
+            Hotels
+          </div>
+        </Link>
+      </li>
+      <li onClick={handleCloseSidebar}>
+        <Link className="item-link" to="/tour">
+          <div className="left-sec">
+            <img
+              src="https://cdn-icons-png.freepik.com/512/712/712067.png"
+              alt=""
+              style={{ height: "32px", width: "32px" }}
+            />
+            Tour Packages
+          </div>
+        </Link>
+      </li>
+    </ul>
+  </div>
+)}
+
     </div>
   );
 };
